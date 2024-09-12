@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -33,14 +34,12 @@
             opacity: 0.9;
         }
 
-        /* Scrollable table */
         .table-container {
             height: 600px;
             overflow-y: auto;
             margin-bottom: 20px;
         }
 
-        /* Form Styles */
         input[type="text"] {
             color: black;
             padding: 8px;
@@ -85,7 +84,6 @@
             border-image: url("https://www.w3schools.com/css/border.png") 30 round;
         }
 
-        /* Responsive Styles */
         @media only screen and (max-width: 600px) {
             input[type="text"], button {
                 font-size: 14px;
@@ -105,6 +103,16 @@
             color: transparent;
             background-clip: text;
         }
+        #allin{
+        color:#3266CC;
+        }
+        #exp{
+        color:#F39900;
+        }
+        #bal{
+        color:#DC3812
+        
+        }
 
         #sta {
             display: flex;
@@ -113,7 +121,16 @@
             margin-bottom: 0px;
         }
         
+       #rand{
+        display:flex;
+        width:300px;
+        flex-wrap:wrap;
+        gap:5px;
+        }
+        #rand h5{
+        margin:0px;
         
+        }
         
         
     </style>
@@ -129,10 +146,16 @@
 </center>
 <center>
 
-<h5 style="color:lightgreen;"><b>3000MF+5000Suzolol, </b> Growing<br>5000 Growing</h5>
+<h5 style="color:lightgreen;"><b>3000MF+5000Suzolol, </b>,15000 to Bajaj IPO</h5>
 <h5 style="color:orange;"><b>11,150</b> to vadimama [ sanga+vandi service charges ] <br>he told return [ 6800 ]</h5>
 <h5 style="color:Tomato;"><b>522,</b> Ambika atthe May Mobile Recharge She told to me I will Return it but No-Return</h5>
-    
+
+<details>
+  <summary style="color:lightgreen;" id="randt"></summary>
+    <h5 id="rand"></h5>
+</details>
+
+<div id="donutchart" style="width:240px; paddin:0px;margin:0px;height:240px;"></div>
 </center>
 <div id="sta">
     <p id="allin"></p>
@@ -560,7 +583,7 @@
         <td class='dateColumn'>23/7/24</td>
         <td>Dad</td>
         <td><h4>
-        <mon class="mony">0</mon>,10/8/24 to viji[dress]<br>
+        <mon class="mony">3000</mon>,10/8/24 to viji[dress]<br>
         </h4>
         <td class='Abal'>0</td>
         </tr>
@@ -624,8 +647,26 @@
         <mon class="mony">255</mon>,30/8/24 to word power made easy book.<br>
         
         
+        
+        <mon class="mony">25</mon>,1/9/24 milk pavan.<br>
+        <mon class="mony">19</mon>,1/9/24 pavan recharge.<br>
+        <mon class="mony">112</mon>,3/9/24 to zepto pavan<br>
+        <mon class="mony">10</mon>,3/3/24 Bourbon.<br>
+        <mon class="mony">31</mon>,4/9/24 milk vicks chocalte.<br>
+        <mon class="mony">37</mon>,4/9/24 samosa,pups.<br>
+        <mon class="mony">49</mon>,6/9/24 samosa 2 pups.<br>
+        <mon class="mony">102</mon>,8/9/24 to chandra mi work, gift.<br>
+        <mon class="mony">67</mon>,9/9/24 swiggy instamart frooti,chips<br>
+        <mon class="mony">160</mon>,9/9/24 kdgh-cmnr +train+auto<br>
+        <mon class="mony">200</mon>,9/9/24 Diploma Prizemoney Application Vignesh+Dhanush[ dhanush ,food,xerox,juice]<br>
+        <mon class="mony">200</mon>,9,10/9/24 Vandi Petrol.<br>
+        <mon class="mony">150</mon>,11/9/24 cmnr-kdgh + food +train+bus.<br>
+        <mon class="mony">100</mon>,11/9/24 socks 3 for dughty.<br>
+        <mon class="mony">66</mon>,11/9/24 zepto , munch chocalte + zepto 40rs offer.<br>
+        <mon class="mony">398</mon>,11/9/24 for pavan photo pouch,photo key chain + printshoppy offers.<br>
+        
         </h4>
-        <td class='Abal'>9423</td>
+        <td class='Abal'>7697</td>
         </tr>
         
         <tr>
@@ -665,6 +706,42 @@
         <td class='Abal'>0</td>
         </tr>
         
+        
+        <tr>
+        <td class='incomeColumn'>6000</td>
+        <td class='dateColumn'>10/9/24</td>
+        <td>Dad</td>
+        <td><h4>
+        <mon class="mony">1000</mon>,11/9/24 to dad [cash pavan atm ].<br>
+        <mon class="mony">650</mon>,10/9/24 to dad jio sim+ new charger.<br>
+        <mon class="mony">2000</mon>,10/9/24 to Vadivel mama Samsung Phone Sell To Dad.<br>
+        
+        </h4>
+        <td class='Abal'>2350</td>
+        </tr>
+        
+        <tr>
+        <td class='incomeColumn'>16751</td>
+        <td class='dateColumn'>9/9/24</td>
+        <td>Security salary</td>
+        <td><h4>
+        <mon class="mony">0</mon>,<br>
+        </h4>
+        <td class='Abal'>16751</td>
+        </tr>
+        
+        <tr>
+        <td class='incomeColumn'>540</td>
+        <td class='dateColumn'>9/9/24</td>
+        <td>Security salary ot</td>
+        <td><h4>
+        <mon class="mony">0</mon>,<br>
+        </h4>
+        <td class='Abal'>540</td>
+        </tr>
+        
+        
+        
       <!--
       
       <tr>
@@ -682,6 +759,10 @@
 </div>
 
 <script>
+
+let cbal ="";
+let cexp="";
+let cin="";
     function searchTable() {
         let searchText = document.getElementById("searchInput").value.trim().toUpperCase();
         let table = document.getElementById("dataTable");
@@ -703,6 +784,7 @@
         }
 
         updateTotals();
+        drawChart();
     }
 
     function updateTotals() {
@@ -712,24 +794,28 @@
 
         let xx = 0;
         let tt = 0;
+       
         let bala = 0;
-
+        
         for (let i = 0; i < allinc.length; i++) {
        // document.write(allinc[i].closest('tr').style.display);
             if (allinc[i].closest('tr').style.display !== 'none') {
                 xx += parseInt(allinc[i].innerHTML);
+                cin=xx;
             }
         }
 
         for (let i = 0; i < allbal.length; i++) {
             if (allbal[i].closest('tr').style.display !== 'none') {
                 bala += parseInt(allbal[i].innerHTML);
+                cbala=bala;
             }
         }
 
         for (let i = 0; i < money.length; i++) {
             if (money[i].closest('tr').style.display !== 'none') {
                 tt += parseInt(money[i].innerHTML.replace('rs ', ''));
+                cexp=tt;
             }
         }
 
@@ -743,14 +829,75 @@
 
     // Adding "rs" suffix and setting color for money elements
     let moneyElements = document.getElementsByClassName("mony");
+    
+    let xxc=1;
     for (let money of moneyElements) {
+    //alert(money.innerHTML);
+    if( money.innerHTML>=1000){
+        //let cc=document.createElement('p');
+        //cc.innerHTML=money.innerHTML;
+        xxc+=parseInt(money.innerHTML);
+    let mni = parseFloat(money.innerHTML); // Ensure mni is a number
+    
+    if (mni >= 1000 && mni <= 1999) {
+    document.getElementById("rand").innerHTML+= "<font style='color:red'>" + money.innerHTML + "</font>";;
+    }
+    else if (mni >= 2000 && mni <= 2999) {
+    document.getElementById("rand").innerHTML+= "<font style='color:green'>" + money.innerHTML + "</font>";;
+    }
+    if (mni >= 3000 && mni <= 3999) {
+    document.getElementById("rand").innerHTML+= "<font style='color:gold'>" + money.innerHTML + "</font>";;
+    }
+    if (mni >= 4000 && mni <= 10000) {
+    document.getElementById("rand").innerHTML+= "<font style='color:white'>" + money.innerHTML + "</font>";;
+    }
+    
+     
+    
+    document.getElementById("randt").innerHTML= "Over 1000rs is :- "+xxc;
+    //alert(money.innerHTML);
+    };
+         //alert(money.innerHTML);
         money.style.color = "orange";
         if (!money.innerHTML.endsWith('rs ')) {
             money.innerHTML += "rs ";
         }
+        
+    }
+    
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Income',cin],
+    ['Expence', cexp],
+    ['Balance',cbala]
+    ]);
+    
+    var options = {
+    legend:'none',
+    //is3D: true,
+    pieHole: 0.50,
+    backgroundColor: 'transparent',
+    legend:'none',
+    pieSliceTextStyle:{ color:'transparent'},
+    titleTextStyle: { color:'transparent' },
+    pieSliceBorderColor: 'black',
+    };
+    
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+    chart.draw(data, options);
     }
 </script>
 
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      
+    </script>
+    
+    
 <center>
 <h5 style="color:white;margin:0px;">developed by</h5>
 <h1 style="margin:0px;">Microintel</h1></center>
