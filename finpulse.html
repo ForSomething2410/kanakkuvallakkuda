@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinPulse</title>
+    <link rel="stylesheet" href="finpulse.css">
+</head>
+<body>
+
+<div id="cnrdi" class="cnrd">
+<form action="#" onsubmit="appendC(event,'nria','nrid','nrif','nrie','nrib')">
+   <fieldset>
+   <legend>Create New Record</legend>
+    <input type="number" placeholder="Enter Amount" id="nria" required>
+    <input type="text" placeholder="Slect Date" onfocus="(this.type='date')" id="nrid" required >
+    <input type="text" placeholder="Enter Amount Source" id="nrif" required>
+    <input type="number" placeholder="Enter Expence" id="nrie" required>
+    <input type="number" placeholder="Enter Balance" id="nrib" required>
+    <hr style="width:100%;">
+    <div style="display:flex;width:100%;justify-content:space-around;">
+    <button type="submit" >Save Record</button>
+    <button type="button" onclick="clo('cnrdi')">Close</button>
+    </div>
+  </fieldset>
+  </form>
+</button>
+</div>
+
+
+<div id="anrdi" class="anrd">
+    <form action="#" onsubmit="addTr(event, 'anria', 'anrid', 'anrif')">
+        <fieldset>
+            <legend>Add Transaction</legend>
+            <input type="number" placeholder="Enter Amount" id="anria" required>
+            <input type="text" placeholder="Select Date" onfocus="(this.type='date')" id="anrid" required>
+            <input type="text" placeholder="Enter Amount Source" id="anrif" required>
+            <hr style="width:100%;">
+            <div style="display:flex;width:100%;justify-content:space-around;">
+                <button type="submit">Save Record</button>
+                <button type="button" onclick="clo('anrdi')">Close</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+
+
+<div class="menu" id="mmmm">
+
+<div class="om">
+  <img width="30px" id="mimg" src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF">
+    <ul class="feed">
+      <li onclick="location.href='https://microintel.github.io/endgram/file/coding.html'">Profile</li>
+      <li class="cnrr" onclick="discr('cnrdi')">Add Record</li>
+      <li onclick="location.href='https://microintel.github.io/endgram/file/coding.html'"onclick="">Statistics</li>
+      <li><font onclick="printe()">Print</font></li>
+      <li onclick="location.href='https://github.com/microintel/finpulse?tab=readme-ov-file#finpulse--documentation'">Documentation</li>
+      <li onclick="location.href='https://microintel.github.io/endgram/file/coding.html'">Log out</li>
+    </ul>
+  </div>
+  
+  <img id="tttim" width="100px" height="35px" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/finpulse-white.png">
+
+<div id="yyyy" class="theame">
+  <img onclick="theame(this.id)" id="w" src="https://img.icons8.com/?size=100&id=Ppe22DwOvBTF&format=png&color=FFFFFF">
+  </div>
+
+</div>
+<br>
+<center><h2 style="text-align:left;" id="adapa">FinPulse</h2></center>
+
+
+<div class="bsea">
+<a href="#sinpp">&#x1F50D</a>
+
+</div>
+
+  <div id="ssinp" class="sinp">
+  
+  <input type="text" id="sinpp" placeholder="Amount &#x1F50D ..." oninput="searTa()" />
+        
+        <input type="text" id="seait" placeholder="Tran &#x1F50D ..." oninput="sea()" />
+        <img ondblclick="borww('block')" id="bori" src="https://img.icons8.com/?size=100&id=rRTAE6XGGP2Q&format=png&color=FFFFFF">
+        
+       </div> 
+   <br>
+   
+   <div id="borwi" class="borw">
+   <div class="canh">
+   <h4 style="margin:0px;padding:0px;color:transparent;">B</h4>
+   <center>
+   <h4 style="margin:0px;padding:0px;color:var(--b)">Lend</h4>
+   </center>
+   <p id="canb" style="padding:0px;margin:0px;" onclick="borww('none')"><i class="material-icons" style="padding:0px;margin;0x;font-size:22px;color:red">cancel</i></p>
+   </div>
+   
+  <p>1. <b>3,000</b> given to friend for shopping</p>
+   <p>2. <b>7,600</b> given to neighborhood for rent</p>
+   <p>3. <b>30,909</b> in Quant Small Cap Fund</p>
+   
+   </div>
+   
+   <br>
+   <div id="crai" class="cra">
+  <div id="donutchart"></div>
+   <details id="radiii" class="rad">
+        <summary id="rsumi" class="rsum"></summary>
+        <div id="rsdi" class="rsd">
+       </div>
+   </details>
+   </div>
+   <br>
+    <center>
+        <div id="stytt" class="styt">
+        <div id="staa">
+        
+        <p>INCOME</p>
+        <p>EXPENCE</p>
+        <p>BALANCE</p>
+        <p>TRAN EXP</p>
+        </div>
+        <div id="sta">
+       
+        <p id="allin"></p>
+        <p id="exp"></p>
+        <p id="bal"></p>
+        <p id="exex"></p>
+        </div>
+        </div>
+
+        <br>
+        <div id="ppr" class="parnt">
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">  2.2.24  </font><font class="fromm">   Dad   </font><font class="exep">  2000  </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtrie3ieba"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  250 </font><font class="tdate">  9.2.24 </font><font class="tdes">   Pavan Recharge </font></div>
+          <div class="trans"><font class="mony">  600 </font><font class="tdate">  2.2.24 </font><font class="tdes">   Dad</font></div>
+          <div class="trans"><font class="mony">  300 </font><font class="tdate">  10.2.24 </font><font class="tdes">  Pavan Mysore Veg ,petro  </font></div>
+          <div class="trans"><font class="mony">  400 </font><font class="tdate">  10.2.24 </font><font class="tdes">  Pavan 6th sem exam fee  </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">   6.2.24 </font><font class="tdes">  Pavan Train Fine  </font></div>
+          <div class="trans"><font class="mony">  350 </font><font class="tdate">   19.2.24 </font><font class="tdes"> Viji  </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 800   </font><font class="dateColumn">   20.1.2 </font><font class="fromm">   Dad   </font><font class="exep">  800  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  800 </font><font class="tdate">  20.1.24 </font><font class="tdes">   Home,Tata </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">  3.1.24  </font><font class="fromm">    Dad  </font><font class="exep">  2000  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  1000 </font><font class="tdate">  3.1.24 </font><font class="tdes">  Home,Tata  </font></div>
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">   3.1.24</font><font class="tdes">   Viji Infosys Tour </font></div>
+          <div class="trans"><font class="mony">  250 </font><font class="tdate">  3.1.24 </font><font class="tdes">   Pavan Recharge </font></div>
+          <div class="trans"><font class="mony">   50</font><font class="tdate">   3.1.24</font><font class="tdes">   Viji Cutting </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  3.1.24 </font><font class="tdes">   Home,Tata </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  19.2.24 </font><font class="tdes">   Viji Aadhar Update </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">   1.2.24 </font><font class="fromm">   Dad   </font><font class="exep"> 2000   </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  6.2.24 </font><font class="tdes">   Dad </font></div>
+          
+          <div class="trans"><font class="mony">  1500 </font><font class="tdate"> 8.2.24  </font><font class="tdes">  Viji Phone  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  1000  </font><font class="dateColumn"> 10.2.24   </font><font class="fromm">   Dad   </font><font class="exep">  1000  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">   600</font><font class="tdate"> 13.2.24  </font><font class="tdes">  Home,Tata  </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  3.2.24 </font><font class="tdes">  Pavan Mysore Veg  </font></div>
+          <div class="trans"><font class="mony">  300 </font><font class="tdate">   19.2.24</font><font class="tdes">   Viji </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">  20.2.24  </font><font class="fromm">   Dad   </font><font class="exep">  2000  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 1000  </font><font class="tdate">  20.2.24 </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  20.2.24 </font><font class="tdes">  Cycle Repair  </font></div>
+          <div class="trans"><font class="mony">  150 </font><font class="tdate">  28.2.24 </font><font class="tdes">  Pavan Temper glass  </font></div>
+          <div class="trans"><font class="mony">  50</font><font class="tdate">  28.2.24 </font><font class="tdes">   Pavan Monthly report </font></div>
+          <div class="trans"><font class="mony">  200 </font><font class="tdate">  20.2.24 </font><font class="tdes">  Dad Phone Recharge  </font></div>
+          <div class="trans"><font class="mony"> 50  </font><font class="tdate">  3,4.3.24 </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate">  24.3.24 </font><font class="tdes">  Dad recharge  </font></div>
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate">  25.3.24 </font><font class="tdes">  Pavan Mysore Veg  </font></div>
+          <div class="trans"><font class="mony">  50 </font><font class="tdate">  30.3.24 </font><font class="tdes">  Bang 2nd ray bike  </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">  26.2.24  </font><font class="fromm">  Dad    </font><font class="exep">  2000  </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          <div class="trans"><font class="mony">  1000 </font><font class="tdate"> 26.2.24  </font><font class="tdes">  Dad  </font></div>
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  26.2.24 </font><font class="tdes">   Viji </font></div>
+          <div class="trans"><font class="mony">  300 </font><font class="tdate">  26.2.24 </font><font class="tdes">   Dad </font></div>
+          
+          <div class="trans"><font class="mony">  200 </font><font class="tdate">  26.2.24 </font><font class="tdes">   Pavan Mysore Veg </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">   1000 </font><font class="dateColumn">  3.3.24  </font><font class="fromm">   Dad   </font><font class="exep">  1000  </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          <div class="trans"><font class="mony"> 250  </font><font class="tdate"> 8.3.24  </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  200 </font><font class="tdate"> 8.3.24  </font><font class="tdes">   Pavan Mysore Veg </font></div>
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate">  2.4.24 </font><font class="tdes">   Pavan Mysore Veg </font></div>
+          
+          <div class="trans"><font class="mony"> 350  </font><font class="tdate">  30.3.24 </font><font class="tdes">  Bang 2nd ray bike  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2500  </font><font class="dateColumn">  12.3.24  </font><font class="fromm">   Dad   </font><font class="exep">  2500  </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate"> 12.4.24  </font><font class="tdes"> Pavan Mysore Veg   </font></div>
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate"> 18.3.24  </font><font class="tdes">   Pavan Mysore Veg </font></div>
+          <div class="trans"><font class="mony">1000   </font><font class="tdate"> 27.3.24  </font><font class="tdes">  Dad new phone  </font></div>
+          
+          <div class="trans"><font class="mony"> 1100  </font><font class="tdate">  30.3.24 </font><font class="tdes"> Bang 2nd ray bike   </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  3000  </font><font class="dateColumn">  27.3.24  </font><font class="fromm">  Dad    </font><font class="exep">   3000 </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  3000 </font><font class="tdate"> 30.3.24  </font><font class="tdes"> Bang 2nd ray bike   </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">  3.4.24  </font><font class="fromm">   Dad   </font><font class="exep">  200p  </font><font class='Abal'> 0   </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 500  </font><font class="tdate">  3.4.24 </font><font class="tdes">  Home ,tata  </font></div>
+          <div class="trans"><font class="mony"> 1000  </font><font class="tdate"> 3.4.24  </font><font class="tdes"> Bang 2nd ray bike   </font></div>
+          <div class="trans"><font class="mony"> 250  </font><font class="tdate"> 3.4.24  </font><font class="tdes">  Pavan mys-cmnr 1m pass  </font></div>
+          <div class="trans"><font class="mony"> 250  </font><font class="tdate">  3.4.24 </font><font class="tdes">   Pavan Recharge </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  500  </font><font class="dateColumn">  8.4.24  </font><font class="fromm">  Dad    </font><font class="exep">  500  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          <div class="trans"><font class="mony">  200 </font><font class="tdate"> 8,9.4.24  </font><font class="tdes"> Pavan Mysore veg   </font></div>
+          
+          <div class="trans"><font class="mony">  300 </font><font class="tdate">  9.4.24 </font><font class="tdes"> Viji   </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  8000  </font><font class="dateColumn">  10.3.24  </font><font class="fromm"> Dip Schp  </font><font class="exep">  1000 </font><font class='Abal'>   7000 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  3.5.24 </font><font class="tdes">  Dip 6th sem report  </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  4.5.24 </font><font class="tdes">  6-7th stdy crti by anand anna  </font></div>
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate">  6.5.24 </font><font class="tdes"> bang-cmnr,cmnr-bang   </font></div>
+          <div class="trans"><font class="mony"> 40  </font><font class="tdate">  5.5.24 </font><font class="tdes">   Pavan Viji Ambika egg pups </font></div>
+          <div class="trans"><font class="mony"> 160  </font><font class="tdate">  8.5.24 </font><font class="tdes">  bang-cmnr,cmnr-bang  </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 5000  </font><font class="dateColumn"> 16.4.24   </font><font class="fromm">  Dad    </font><font class="exep">  5000  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  4800 </font><font class="tdate"> 16.4.24  </font><font class="tdes">  Bang 2nd ray bike  </font></div>
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate">  16.4.24 </font><font class="tdes">   Viji </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 2000   </font><font class="dateColumn"> 23.4.24   </font><font class="fromm">    Dad  </font><font class="exep">  2000  </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  2000 </font><font class="tdate">  23.4.24 </font><font class="tdes">  Bang 2nd ray bike  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  1500  </font><font class="dateColumn">   2.5.24 </font><font class="fromm">    Dad  </font><font class="exep">  1500  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  500 </font><font class="tdate"> 3.5.24  </font><font class="tdes">   Dad </font></div>
+          <div class="trans"><font class="mony">  250 </font><font class="tdate">  9.5.24 </font><font class="tdes">   Viji Recharge </font></div>
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  20.5.24 </font><font class="tdes">  Dad ranjinikanth lend  </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  20.5.24 </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  150 </font><font class="tdate">  22.5.24 </font><font class="tdes">  Pavan noise bud[900]  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">   3000 </font><font class="dateColumn"> 18.5.24   </font><font class="fromm">    Dad  </font><font class="exep"> 3000   </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 3000  </font><font class="tdate">  18.5.24 </font><font class="tdes">  Bang 2nd ray bike  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 30   </font><font class="dateColumn">  26.5.24  </font><font class="fromm">   Narain Mahi   </font><font class="exep">  30  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 30  </font><font class="tdate">  29.5.24 </font><font class="tdes">  1egg pups+parle-g  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  4000  </font><font class="dateColumn"> 27.5.24   </font><font class="fromm">  Dad    </font><font class="exep">   4000 </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 3000  </font><font class="tdate"> 27.5.24  </font><font class="tdes">  Viji 2nd puc fee  </font></div>
+          <div class="trans"><font class="mony"> 1000 </font><font class="tdate">  29,30.5.24 </font><font class="tdes">  Dad by muttu  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  20  </font><font class="dateColumn"> 29.5.24  </font><font class="fromm">   A109 H dad Mahi    </font><font class="exep">  20  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 20  </font><font class="tdate">  29.5.24 </font><font class="tdes"> milk+parle-g+bru   </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  1000  </font><font class="dateColumn">  6.6.24  </font><font class="fromm">  Dad    </font><font class="exep">   1000 </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  250 </font><font class="tdate"> 6.6.24  </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  250 </font><font class="tdate">  9.6.24 </font><font class="tdes">   Pavan kdgh-krs+food+o </font></div>
+          <div class="trans"><font class="mony">  350 </font><font class="tdate"> 2.6.24  </font><font class="tdes">  Viji Belt Slipper  </font></div>
+          <div class="trans"><font class="mony">  150 </font><font class="tdate"> 22.6.24  </font><font class="tdes">  cmnr-mys+food  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 3000   </font><font class="dateColumn">  12.6.24  </font><font class="fromm">    Dad  </font><font class="exep">  3000  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate"> 14.6.24  </font><font class="tdes">  Home Chicken  </font></div>
+          <div class="trans"><font class="mony"> 300  </font><font class="tdate"> 12.6.24  </font><font class="tdes">  Pavan t-shirt  </font></div>
+          <div class="trans"><font class="mony"> 500  </font><font class="tdate"> 14.6.24  </font><font class="tdes">   Home,tata </font></div>
+          <div class="trans"><font class="mony"> 500  </font><font class="tdate">  18.6.24 </font><font class="tdes">   Pavan t-shirt </font></div>
+          <div class="trans"><font class="mony"> 150  </font><font class="tdate">  23.6.24 </font><font class="tdes">   Pavan krs-kdgh </font></div>
+          <div class="trans"><font class="mony">  250 </font><font class="tdate">  27.6.24 </font><font class="tdes">  Viji Recharge  </font></div>
+          <div class="trans"><font class="mony">  1000 </font><font class="tdate"> 28.6.24  </font><font class="tdes">  Dad  </font></div>
+          <div class="trans"><font class="mony"> 100  </font><font class="tdate">  28.6.24 </font><font class="tdes">  Pavan palou samosa  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  2000  </font><font class="dateColumn">  18.6.24  </font><font class="fromm">   Dad   </font><font class="exep">  2000  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  250 </font><font class="tdate"> 28.6.24  </font><font class="tdes">  Pavan Recharge  </font></div>
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  2.7.24 </font><font class="tdes">   Dad </font></div>
+          <div class="trans"><font class="mony"> 250  </font><font class="tdate">  2.7.24 </font><font class="tdes">  Pavan DCET DIC PRINT+food  </font></div>
+          <div class="trans"><font class="mony">  450 </font><font class="tdate"> 1.7.24  </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony"> 260  </font><font class="tdate">  1.6.24 </font><font class="tdes">  Cmnr Tv recharge  </font></div>
+          <div class="trans"><font class="mony"> 250  </font><font class="tdate"> 1.6.24  </font><font class="tdes">   kdgh-cmnr train+2bus </font></div>
+          <div class="trans"><font class="mony"> 40  </font><font class="tdate"> 1.6.24  </font><font class="tdes">   Pavan fruit </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 1000   </font><font class="dateColumn">  4.7.24  </font><font class="fromm">   Dad   </font><font class="exep">  1000  </font><font class='Abal'>   0 </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 200  </font><font class="tdate">  3.7.24 </font><font class="tdes">  Dad  </font></div>
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  5.7.24 </font><font class="tdes">  Pavan BLU glass  </font></div>
+          <div class="trans"><font class="mony">  300 </font><font class="tdate"> 6.7.24  </font><font class="tdes">   Home,tata </font></div>
+          
+          </div>
+          </div>
+          
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  5000  </font><font class="dateColumn">  11.7.24  </font><font class="fromm">   Dad   </font><font class="exep">  1825  </font><font class='Abal'>  3175  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  40 </font><font class="tdate"> 9.7.24  </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony"> 30  </font><font class="tdate">  11.7.24 </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  100 </font><font class="tdate">  12.7.24 </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  290 </font><font class="tdate"> 26,30.7.24  </font><font class="tdes"> Viji   </font></div>
+          <div class="trans"><font class="mony">  300 </font><font class="tdate">  26.7.24 </font><font class="tdes">  Viji Recharge  </font></div>
+          <div class="trans"><font class="mony"> 1000  </font><font class="tdate">  8.8.24 </font><font class="tdes">  Dad phone repair  </font></div>
+          <div class="trans"><font class="mony">  65 </font><font class="tdate">  6,10.8.24 </font><font class="tdes">  Viji  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 3000   </font><font class="dateColumn">  23.7.24  </font><font class="fromm">   Dad   </font><font class="exep">   3000 </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 3000  </font><font class="tdate">  10.8.24 </font><font class="tdes"> Viji dress   </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  500  </font><font class="dateColumn">  26.7.2  </font><font class="fromm">  phaniraj mahi    </font><font class="exep">  50  </font><font class='Abal'>  0  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  500 </font><font class="tdate">  1.8.24 </font><font class="tdes">  Home,tata  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  3000  </font><font class="dateColumn">  14.8.24  </font><font class="fromm">    Dad  </font><font class="exep">  0  </font><font class='Abal'>  3000  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 0  </font><font class="tdate"> 0  </font><font class="tdes">  0  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 4000   </font><font class="dateColumn">  25.8.24  </font><font class="fromm">   Dad   </font><font class="exep">  402  </font><font class='Abal'>  3598  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony">  302 </font><font class="tdate">  23.8.24 </font><font class="tdes">  Charan Recharge  </font></div>
+          <div class="trans"><font class="mony">  40 </font><font class="tdate">   </font><font class="tdes">  Viji  </font></div>
+          <div class="trans"><font class="mony">  60 </font><font class="tdate">   </font><font class="tdes">  Viji  </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn">  1000  </font><font class="dateColumn">  30.8.24  </font><font class="fromm">   Dad   </font><font class="exep">   1000 </font><font class='Abal'> 0   </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 1000  </font><font class="tdate">  1.9.24 </font><font class="tdes"> Home,tata   </font></div>
+          
+          </div>
+          </div>
+          
+          <div class="child">
+          <div class="idfeb">
+          <font class="incomeColumn"> 6000   </font><font class="dateColumn">  10.9.24  </font><font class="fromm">   Dad   </font><font class="exep"> 3650   </font><font class='Abal'>  2350  </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+          </div>
+          <div id="trandi" class="trand">
+          
+          <div class="trans"><font class="mony"> 1000  </font><font class="tdate"> 11.9.24  </font><font class="tdes">  Dad  </font></div>
+          <div class="trans"><font class="mony">  650 </font><font class="tdate">  10.9.24 </font><font class="tdes">  Dad jio sim+charger  </font></div>
+          <div class="trans"><font class="mony">  2000 </font><font class="tdate">  10.9.24 </font><font class="tdes">  Dad Samsung phone  </font></div>
+          
+          </div>
+          </div>
+          
+        
+<!--
+  
+<div class="child">
+<div class="idfeb">
+<font class="incomeColumn">    </font><font class="dateColumn">    </font><font class="fromm">      </font><font class="exep">    </font><font class='Abal'>    </font><font onclick="discr('anrdi',this.id)" id="adtra"><img class="adimg" src="https://img.icons8.com/?size=100&id=szDzfecravBo&format=png&color=FA5252"></font>
+</div>
+<div id="trandi" class="trand">
+
+<div class="trans"><font class="mony">   </font><font class="tdate">   </font><font class="tdes">    </font></div>
+
+</div>
+</div>
+      
+-->
+        
+        
+        
+        </div>
+        
+        <script src="finpulse.js"></script>
+       
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       <script type="text/javascript">
+       google.charts.load("current", {packages:["corechart"]});
+       google.charts.setOnLoadCallback(drawChart);
+       
+       </script>
+       <br><br>
+        <center>
+        <img class="dbimg" id="parr" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
+        </center>
+        </body>
+        </html>
