@@ -9,6 +9,7 @@ let fdx= await fx.text();
 
 document.getElementById("ppr").innerHTML+=fd;
 document.getElementById("ppr").innerHTML+=fdx;
+       updateTotals();
 }
 
 getDataa();
