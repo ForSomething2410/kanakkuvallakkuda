@@ -121,13 +121,15 @@
         
         .child {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction:row;
+        flex-wrap:wrap;
+        
         gap:10px;
-        width: 320px;
+        width:100%;
         border: 1px solid var(--tbor);
-        justify-content: center;
         background-color:var(--w);
+        backdrop-filter: blur(10px);
+
         border-radius: 6px;
         border-left:3px solid var(--bor);
         }
@@ -136,7 +138,8 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        height:15px;
+        
+        min-height::15px;
         justify-content: space-around;
         font-weight: bold;
         align-items:center;
@@ -156,7 +159,7 @@
         .trand {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        
         width: 100%;
         border-top: 1px solid var(--bor);
         padding-top: 10px;
@@ -534,7 +537,7 @@
            display:none !important;
         }
         #borwi,#adapa{
-         display:block !important;
+         display:none !important;
         }
         
         
@@ -570,7 +573,4 @@
         margin:0px;
         border-bottom:2px solid black;
         }
-         .child {
-width:100%;
-         }
         }

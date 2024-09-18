@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">
+
+async function getDataa(){
+let f=await fetch("https://forsomething2410.github.io/kanakkuvallakkuda/dad.html");
+let fx=await fetch("https://forsomething2410.github.io/kanakkuvallakkuda/pavan.html");
+let fd=await f.text();
+let fdx= await fx.text();
+
+document.getElementById("ppr").innerHTML+=fd;
+document.getElementById("ppr").innerHTML+=fdx;
+updateTotals();
+}
+
+getDataa();
+
+</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FinPulse</title>
@@ -96,16 +112,16 @@
    <p id="canb" style="padding:0px;margin:0px;" onclick="borww('none')"><i class="material-icons" style="padding:0px;margin;0x;font-size:22px;color:red">cancel</i></p>
    </div>
    
-  <p>1. <b>3,000</b> given to friend for shopping</p>
-   <p>2. <b>7,600</b> given to neighborhood for rent</p>
-   <p>3. <b>30,909</b> in Quant Small Cap Fund</p>
+  <p>1. <b>522</b> Given to Ambika Atthe Recharge by Pavan</p>
+   <p>2. <b>11,150</b> Given to vadimama from others but he told to return 6800</p>
+   <p>3. <b>1,00,000</b> Given To Mummy By Dad Collection Of EMI</p>
    
    </div>
    
    <br>
    <div id="crai" class="cra">
   <div id="donutchart"></div>
-   <details id="radiii" class="rad">
+   <details  id="radiii" class="rad">
         <summary id="rsumi" class="rsum"></summary>
         <div id="rsdi" class="rsd">
        </div>

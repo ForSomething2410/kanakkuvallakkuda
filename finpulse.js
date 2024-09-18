@@ -1,21 +1,10 @@
 let preNo = "";
 
 
-async function getDataa(){
-let f=await fetch("https://forsomething2410.github.io/kanakkuvallakkuda/dad.html");
-let fx=await fetch("https://forsomething2410.github.io/kanakkuvallakkuda/pavan.html");
-let fd=await f.text();
-let fdx= await fx.text();
-
-document.getElementById("ppr").innerHTML+=fd;
-document.getElementById("ppr").innerHTML+=fdx;
-       updateTotals();
-}
-
-getDataa();
 
 
-       alert("This is still in development. We use demo data for demonstration purposes only, and no data is saved yet. Future updates will include data storage..");
+
+      // alert("This is still in development. We use demo data for demonstration purposes only, and no data is saved yet. Future updates will include data storage..");
        function addTr(event,a,b,c) {
        event.preventDefault();
        let tA = document.getElementById(a);
@@ -288,7 +277,7 @@ getDataa();
           alert(almo[x].innerHTML+" for "+almodes[x].innerHTML);
           };
           let mni=parseInt(almo[x].innerHTML);
-          if (mni >= 1000 && mni <= 1999) {
+          if (mni >= 500 && mni <= 1999) {
           ft.style.color=getComputedStyle(rut).getPropertyValue('--inc').trim();
           }
           else if (mni >= 2000 && mni <= 2999) {
@@ -324,10 +313,16 @@ getDataa();
         }
         
         function borww(x){
+        let preDa=new Date();
+         let lendP=parseInt(prompt("Enter Password to proceed : "));
+         if(lendP==parseInt(preDa.getDate()+1)){
         document.getElementById("borwi").style.display=x;
         //document.getElementById("borwi").style.width="100%";
         
         document.getElementById("canb").style.display=x;
+        }else{
+         alert("Wrong Lend PassWord.");
+         }
         }
         
        function appendC(event,a,b,c,d,e){
