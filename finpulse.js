@@ -1,4 +1,19 @@
 let preNo = "";
+
+
+async function getDataa(){
+let f=await fetch("https://forsomething2410.github.io/kanakkuvallakkuda/dad.html");
+let fx=await fetch("https://forsomething2410.github.io/kanakkuvallakkuda/pavan.html");
+let fd=await f.text();
+let fdx= await fx.text();
+
+document.getElementById("ppr").innerHTML+=fd;
+document.getElementById("ppr").innerHTML+=fdx;
+}
+
+getDataa();
+
+
        alert("This is still in development. We use demo data for demonstration purposes only, and no data is saved yet. Future updates will include data storage..");
        function addTr(event,a,b,c) {
        event.preventDefault();
