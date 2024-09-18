@@ -570,4 +570,7 @@
         margin:0px;
         border-bottom:2px solid black;
         }
+         .child {
+width:100%;
+         }
         }
