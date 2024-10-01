@@ -1,6 +1,20 @@
 let preNo = "";
 
-
+function alve(){
+      let lenSum=0;
+        let allen=document.getElementsByClassName("lmo");
+      // alert(allen.length);
+       for(let f=0;f<allen.length;f++){
+      // alert(allen[f].innerHTML);
+       lenSum+=parseInt(allen[f].innerHTML);
+       }
+      // alert(lenSum);
+       document.getElementById('lenI').value=lenSum;
+      let otv=parseInt(document.getElementById('oth').value);
+     let bI =parseInt(document.getElementById('bnkI').value);
+       document.getElementById("alvvs").innerHTML=lenSum+otv+bI+"rs";
+        }
+        alve();
 
 
 
@@ -367,4 +381,7 @@ let preNo = "";
         function printe(){
         window.print();
         }
+        
+        
+        
        

@@ -335,6 +335,27 @@
         .bsea a{
         text-decoration:none;
         }
+        
+        .veri{
+        position:fixed;
+        width:30px;
+        height:30px;
+        font-size:28px;
+        z-index:7;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        top:84vh;
+        left:80vw;
+        padding:8px;
+        border-radius:50px;
+        background-color:var(--w);
+        filter: blur(0.3px);
+        border:2px solid var(--b);
+        }
+        .veri a{
+        text-decoration:none;
+        }
         .borw{
         
         width:100%;
@@ -430,7 +451,7 @@
         .feed{
         position:absolute;
         width:150px;
-        height:180px;
+        height:220px;
         left:30px;
         background-color:var(--w);
         padding:0px;
@@ -454,7 +475,7 @@
         border-bottom:1.5px solid var(--tbor);
         text-align:left;
         }
-        li:nth-child(6){
+        li:nth-child(7){
         border-bottom:none;
         }
         .om:hover .feed{
@@ -531,6 +552,45 @@
         #adapa{
         display:none;
         }
+        
+        .alver{
+        
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        flex-wrap:wrap;
+        
+        }
+         table{
+       width:100%;
+       color:var(--b);
+       padding:5px;
+       border:1px solid var(--bor);
+       border-left:3px solid grey;
+       border-radius:6px;
+        }
+        
+       table tr{
+        width:300px;
+        text-align:center;
+        }
+        td{
+        padding:6px;
+        }
+        table tr td input{
+        width:80%;
+        height:10px;
+        border:1px solid orange;
+        border-radius:7px;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        background-color:transparent;
+        
+        }
+        
+        
+        
         @media print{
         
         .bsea{
