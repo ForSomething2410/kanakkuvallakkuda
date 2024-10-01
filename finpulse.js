@@ -12,7 +12,7 @@ function alve(){
        document.getElementById('lenI').value=lenSum;
       let otv=parseInt(document.getElementById('oth').value);
      let bI =parseInt(document.getElementById('bnkI').value);
-       document.getElementById("alvvs").innerHTML=lenSum+otv+bI+"rs";
+       document.getElementById("alvvs").innerHTML=lenSum+otv+bI+"<sub>rs</sub>";
         }
         alve();
 
