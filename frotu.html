@@ -17,9 +17,9 @@
             min-height: 100vh;
         }
         .table-container {
-            background-color: #1f1b24;
+            background-color:black;
             border-radius: 12px;
-            padding: 20px;
+            padding:7px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
         }
         table {
@@ -32,14 +32,13 @@
             font-size: 16px;
         }
         th {
-            background-color: #272135;
+            background-color:transparent;
             color: #ff8c42;
             font-weight: bold;
         }
         td {
-            background-color: #2e294e;
+            background-color:transparent;
             color: #ffffff;
-            border-bottom: 1px solid #3b3b58;
         }
         tr:hover td {
             background-color: #3b2f60;
@@ -57,8 +56,14 @@
     </style>
 </head>
 <body>
+<script type="text/javascript">
+let uu = "https://picsum.photos/200/300/?blur=1";
+document.body.style.background = `url('${uu}')`;
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundRepeat = "no-repeat";
+</script>
     <div class="table-container">
-        <h2 style="color: #ff8c42;">Frotu</h2>
+        <h3 style="color: #ff8c42;">Frotu</h3>
         <table>
             <thead>
                 <tr>
