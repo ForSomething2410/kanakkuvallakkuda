@@ -205,6 +205,28 @@ getDataa();
        google.charts.setOnLoadCallback(drawChart);
        
        </script>
+        <script type="text/javascript">
+        document.body.addEventListener("dblclick",()=>{
+        
+        if(!document.fullscreenElement){
+        document.documentElement.requestFullscreen();
+        }
+        else{
+        document.documentElement.exitFullscreen();
+        }
+        });
+        
+        function fls(){
+        if(!document.fullscreenElement){
+        document.documentElement.requestFullscreen();
+        }
+        else{
+        document.documentElement.exitFullscreen();
+        }
+        }
+        
+        fls();
+        </script>
        <br><br>
         <center>
         <img class="dbimg" id="parr" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
