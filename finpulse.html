@@ -206,27 +206,20 @@ getDataa();
        
        </script>
         <script type="text/javascript">
-        document.body.addEventListener("dblclick",()=>{
-        
-        if(!document.fullscreenElement){
-        document.documentElement.requestFullscreen();
-        }
-        else{
-        document.documentElement.exitFullscreen();
-        }
-        });
-        
-        function fls(){
-        if(!document.fullscreenElement){
-        document.documentElement.requestFullscreen();
-        }
-        else{
-        document.exitFullscreen();
-        }
-        }
-        
+    document.body.addEventListener("dblclick", () => {
         fls();
-        </script>
+    });
+
+    function fls() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
+    fls();
+</script>
        <br><br>
         <center>
         <img class="dbimg" id="parr" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
