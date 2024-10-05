@@ -64,6 +64,8 @@ document.body.style.backgroundRepeat = "no-repeat";
 </script>
     <div class="table-container">
         <h3 style="color: #ff8c42;">Frotu</h3>
+        <center><h3 id="fsu" style="color: #ff8c42;"></h3></center>
+        
         <table>
             <thead>
                 <tr>
@@ -74,17 +76,53 @@ document.body.style.backgroundRepeat = "no-repeat";
             </thead>
             <tbody>
                 <tr>
-                    <td>1080</td>
+                    <td class="famt">1080</td>
                     <td>13.8.24</td>
                     <td>Security OT</td>
                 </tr>
                 <tr>
-                    <td>540</td>
+                    <td class="famt">540</td>
                     <td>9.9.24</td>
                     <td>Security OT</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">5</td>
+                <td>2.10.24</td>
+                <td>got from train</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">100</td>
+                <td>9.9.24</td>
+                <td>Helped To B202 <br> GrandFather , <br> So Madam Give <br>100rs Gift.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">25</td>
+                <td>5.10.24</td>
+                <td>A402 Manjunath <br> Sir Give 25rs for <br> reciving Amzon <br>COD Order</td>
                 </tr>
             </tbody>
         </table>
     </div>
+    
+    <script type="text/javascript">
+    
+    function famtC(){
+    
+    let fam=document.getElementsByClassName("famt");
+    let fsum=0;
+    for(let f=0;f<fam.length;f++){
+       fsum+=parseInt(fam[f].innerHTML);
+    
+    }
+    alert(fsum);
+    document.getElementById("fsu").innerHTML=`Total ${fsum}`;
+    }
+    
+    famtC();
+    
+    </script>
 </body>
 </html>
