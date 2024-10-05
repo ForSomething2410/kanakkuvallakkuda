@@ -44,7 +44,8 @@ function alve(){
        let p = document.getElementById(preNo);
        let pa = p.parentNode.parentNode.children[1];
        pa.appendChild(diiv);
-       drawChart();
+      // drawChart();
+       dcc();
        alert("Transaction Added..");
        document.querySelector('form').reset();
        clo('anrdi');
@@ -198,7 +199,8 @@ function alve(){
        document.getElementById("bal").innerHTML =nnnx;
        document.getElementById("exp").innerHTML = mmmx;
        
-       drawChart(vvvx,nnnx,mmmx);
+       //drawChart(vvvx,nnnx,mmmx);
+       dcc();
        
        }
         updateTotals();
@@ -237,12 +239,13 @@ function alve(){
         
         }
         updateTotals();
-        drawChart();
+        //drawChart();
+        dcc();
         randE();
         }
         
         
-        function drawChart() {
+        function dd() {
         var data = google.visualization.arrayToDataTable([
         ['adapaavi', 'finpulse'],
         ['Income',cin],
@@ -378,13 +381,18 @@ function alve(){
         let dial="New Record Created Scuessfully..\n Income : "+iA.value+"\n Date : "+iD.value+"\n From : "+iFF.value;
         alert(dial);
         document.getElementById("ppr").appendChild(dii);
-        drawChart();
+        //drawChart();
+        dcc();
         }
         }
         
         function printe(){
         window.print();
         }
+        
+        
+        
+        
         
         
         

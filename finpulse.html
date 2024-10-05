@@ -138,6 +138,14 @@ getDataa();
    
    <br>
    <div id="crai" class="cra">
+   
+   <select onchange="dcc()" id="dccc">
+   <option value="dft">Default</option>
+   <option value="dntc">Donut Chart</option>
+   <option value="clmc">Column Chart</option>
+   <option value="lc">Line Chart</option>
+   </select>
+   
   <div id="donutchart"></div>
    <details  id="radiii" class="rad">
         <summary id="rsumi" class="rsum"></summary>
@@ -200,24 +208,7 @@ getDataa();
       <script src="finpulse.js"></script>
        
        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-       <script type="text/javascript">
-       google.charts.load("current", {packages:["corechart"]});
-       google.charts.setOnLoadCallback(drawChart);
-       
-    document.body.addEventListener("dblclick", () => {
-        fls();
-    });
-
-    function fls() {
-        if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen();
-        } else {
-            document.exitFullscreen();
-        }
-    }
-
-    fls();
-</script>
+       <script src="finC.js"></script>
        <br><br>
         <center>
         <img class="dbimg" id="parr" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
