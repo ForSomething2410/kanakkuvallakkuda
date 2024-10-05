@@ -1,3 +1,7 @@
+
+
+
+
 let preNo = "";
 
 function alve(){
@@ -280,7 +284,7 @@ function alve(){
         
         for(let x=0;x<almo.length;x++){
           if(almo[x].closest(".child").style.display!=="none" || almo[x].closest(".trans").style.display!=="none"){
-            if((almo[x].closest(".child").style.display!=="none" && almo[x].style.display!=="none") && parseInt(almo[x].innerHTML)>=1000){
+            if((almo[x].closest(".child").style.display!=="none" && almo[x].style.display!=="none") && parseInt(almo[x].innerHTML)>=500){
           let ft = document.createElement("font");
           
           ft.textContent =almo[x].innerHTML;
@@ -320,7 +324,7 @@ function alve(){
        }
    
        else{
-      document.getElementById("rsumi").textContent="Over 1k is "+ratt;
+      document.getElementById("rsumi").textContent="Over 0.5k is "+ratt;
        }
         }
         }
