@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Manager</title>
+</head>
+<body>
+    <h1>Cookie Manager</h1>
+
+    <!-- Section 1: Create Cookie -->
+    <section>
+        <h2>Create Cookie</h2>
+        <form onsubmit="setCookie(); return false;">
+            <label for="cookieName">Cookie Name:</label>
+            <input type="text" id="cookieName" required><br><br>
+
+            <label for="cookieValue">Cookie Value:</label>
+            <input type="text" id="cookieValue" required><br><br>
+
+            <label for="cookieDays">Expires in (days):</label>
+            <input type="number" id="cookieDays" required><br><br>
+
+            <button type="submit">Create Cookie</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Section 2: Access Cookie -->
+    <section>
+        <h2>Access Cookie</h2>
+        <button onclick="getCookie()">Show Cookies</button>
+        <div id="cookieOutput"></div>
+    </section>
+
+    <hr>
+
+    <!-- Section 3: Remove Cookie -->
+    <section>
+        <h2>Remove Cookie</h2>
+        <form onsubmit="deleteCookie(); return false;">
+            <label for="cookieToRemove">Cookie Name:</label>
+            <input type="text" id="cookieToRemove" required><br><br>
+
+            <button type="submit">Remove Cookie</button>
+        </form>
+    </section>
+
+    <script>
+        // Function to create a cookie
+        function setCookie() {
+            let name = document.getElementById("cookieName").value;
+            let value = document.getElementById("cookieValue").value;
+            let days = document.getElementById("cookieDays").value;
+            let expires = "";
+
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+
+            // Setting the cookie to be accessible from any page by using path "/"
+            document.cookie = name + "=" + value + expires + "; path=/";
+            alert("Cookie created and is accessible from any page!");
+        }
+
+        // Function to get all cookies
+        function getCookie() {
+            let cookies = document.cookie;
+            document.getElementById("cookieOutput").innerText = cookies ? cookies : "No cookies found";
+        }
+
+        // Function to delete a cookie
+        function deleteCookie() {
+            let name = document.getElementById("cookieToRemove").value;
+            // Setting the cookie's expiry to a past date to delete it
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            alert("Cookie removed if it existed.");
+        }
+    </script>
+</body>
+</html>
