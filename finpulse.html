@@ -205,7 +205,15 @@ getDataa();
         <div id="ppr" class="parnt">
           
         </div>
-        
+       <script>
+       function cck(name) {
+       return document.cookie.split(';').some(cookie => cookie.trim().startsWith(name + '='));
+       }
+       
+       if (!cck("finpulseUser")) {
+       window.location.href = "login.html";
+       }
+       </script>
       <script src="finpulse.js"></script>
        
        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
