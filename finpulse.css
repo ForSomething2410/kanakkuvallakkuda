@@ -650,6 +650,7 @@
         }
         
         #texta{
+        resize: both;
         background-color:var(--w);
         color:aqua;
         border-bottom:2px solid aqua;
