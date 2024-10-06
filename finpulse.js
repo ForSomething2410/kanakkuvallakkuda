@@ -1,6 +1,6 @@
 function gc4() {
             let cookies = document.cookie;
-            document.getElementById("acNa").innerText = cookies ? cookies : location.href="login.html";
+          document.getElementById("acNa").innerText = cookies ? cookies : location.href="login.html";
         }
 function gc() {
             let nameEQ = "finpulseUser" + "=";
@@ -15,7 +15,7 @@ function gc() {
                 }
             }
             document.getElementById("acNa").innerText = "Profile";
-            location.href="login.html";
+           location.href="login.html";
         }
         
 gc();
@@ -24,13 +24,15 @@ function dC() {
             let name = document.getElementById("acNa").innerText;
             document.cookie = "finpulseUser" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             alert("loged out scuessfully.");
-            location.href="login.html";
+           location.href="login.html";
         }
 
 let preNo = "";
 
 function alve(){
       let lenSum=0;
+      let texSu=0;
+      let eveSu=0;
         let allen=document.getElementsByClassName("lmo");
       // alert(allen.length);
        for(let f=0;f<allen.length;f++){
@@ -42,6 +44,15 @@ function alve(){
       let otv=parseInt(document.getElementById('oth').value);
      let bI =parseInt(document.getElementById('bnkI').value);
        document.getElementById("alvvs").innerHTML=lenSum+otv+bI+"<sub>rs</sub>";
+       
+       
+       let tsu=document.getElementById("texta");
+       texSu=eval(tsu.value);
+       eveSu=lenSum+texSu;
+       document.getElementById("texsum").innerHTML=texSu;
+       document.getElementById("evesum").innerHTML=eveSu;
+       
+       
         }
         alve();
 

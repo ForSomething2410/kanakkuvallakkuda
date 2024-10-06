@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="finpulse-favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet'>
 <script type="text/javascript">
 
 async function getDataa(){
@@ -194,7 +195,12 @@ getDataa();
         </tr>
         
         <tr>
-           <td style="color:orange;font-size:18px;" id="alvvs" colspan="3">0</td>
+        <td colspan="3"><textarea oninput="alve()" id="texta">0</textarea></td>
+        
+        <tr>
+           <td style="color:orange;font-size:22px;font-family:'Economica';" id="alvvs">0</td>
+           <td style="color:lightgreen;font-size:26px;font-family:'Economica';" id="evesum">0</td>
+           <td style="color:aqua;font-family:'Economica';font-size:22px;" id="texsum">0</td>
         </tr>
         
         </table>
@@ -211,7 +217,7 @@ getDataa();
        }
        
        if (!cck("finpulseUser")) {
-       window.location.href = "login.html";
+     window.location.href = "login.html";
        }
        </script>
       <script src="finpulse.js"></script>
@@ -219,6 +225,7 @@ getDataa();
        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
        <script src="finC.js"></script>
        <br><br>
+      
         <center>
         <img class="dbimg" id="parr" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/microintel-black-small.png">
         </center>

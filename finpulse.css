@@ -53,6 +53,7 @@
         }
         #allin{
         color:var(--inc);
+        
         }
         #exp{
         color:var(--exp);
@@ -646,6 +647,15 @@
         text-align:center;
         border:2px dashed var(--tbor);
         border-radius:50%;
+        }
+        
+        #texta{
+        min-width:70%;
+        background-color:var(--w);
+        color:aqua;
+        border-bottom:2px solid aqua;
+        border-radius:4px;
+        font-family:'Economica';
         }
         
        
