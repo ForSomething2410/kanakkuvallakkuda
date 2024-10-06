@@ -639,7 +639,7 @@
         position:relative;
         bottom:1%;
         left:5%;
-        z-index:20;
+        z-index:10;
         width:23px;
         background-color:transparent;
         color:var(--b);
@@ -647,3 +647,5 @@
         border:2px dashed var(--tbor);
         border-radius:50%;
         }
+        
+       

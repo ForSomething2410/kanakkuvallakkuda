@@ -1,6 +1,31 @@
+function gc4() {
+            let cookies = document.cookie;
+            document.getElementById("acNa").innerText = cookies ? cookies : location.href="login.html";
+        }
+function gc() {
+            let nameEQ = "finpulseUser" + "=";
+            let cookies = document.cookie.split(';');
 
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i].trim();
+                if (cookie.indexOf(nameEQ) === 0) {
+                    let cookieValue = cookie.substring(nameEQ.length);
+                    document.getElementById("acNa").innerText = cookieValue;
+                    return;
+                }
+            }
+            document.getElementById("acNa").innerText = "Profile";
+            location.href="login.html";
+        }
+        
+gc();
 
-
+function dC() {
+            let name = document.getElementById("acNa").innerText;
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            alert("loged out scuessfully.");
+            location.href="login.html";
+        }
 
 let preNo = "";
 
