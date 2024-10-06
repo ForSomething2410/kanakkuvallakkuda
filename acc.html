@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Cookie</title>
+</head>
+<body>
+    <h1>Access Cookie</h1>
+    <button onclick="getCookie()">Show Cookies</button>
+    <div id="cookieOutput"></div>
+
+    <script>
+        function getCookie() {
+            let cookies = document.cookie;
+            document.getElementById("cookieOutput").innerText = cookies ? cookies : "No cookies found";
+        }
+    </script>
+</body>
+</html>

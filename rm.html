@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Cookie</title>
+</head>
+<body>
+    <h1>Remove Cookie</h1>
+    <form onsubmit="deleteCookie(); return false;">
+        <label for="cookieToRemove">Cookie Name:</label>
+        <input type="text" id="cookieToRemove" required><br><br>
+
+        <button type="submit">Remove Cookie</button>
+    </form>
+
+    <script>
+        function deleteCookie() {
+            let name = document.getElementById("cookieToRemove").value;
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            alert("Cookie removed if it existed.");
+        }
+    </script>
+</body>
+</html>
