@@ -43,6 +43,15 @@ let value = document.getElementById("cname").value;
 }
 
         }
+        
+        
+function cck(name) {
+       return document.cookie.split(';').some(cookie => cookie.trim().startsWith(name + '='));
+       }
+       
+       if (cck("finpulseUser")) {
+     window.location.href = "finpulse.html";
+       }
 
 </script>
 </body>
