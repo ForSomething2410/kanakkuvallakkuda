@@ -15,7 +15,7 @@ function gc() {
                 }
             }
             document.getElementById("acNa").innerText = "Profile";
-           location.href="login.html";
+          // location.href="login.html";
         }
         
 gc();
@@ -24,10 +24,14 @@ function dC() {
             let name = document.getElementById("acNa").innerText;
             document.cookie = "finpulseUser" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             alert("loged out scuessfully.");
-           location.href="login.html";
+          // location.href="login.html";
         }
 
 let preNo = "";
+let bt="transparent";
+let a="white";
+        let b="black";
+
 
 function alve(){
       let lenSum=0;
@@ -237,8 +241,11 @@ function alve(){
        
        //drawChart(vvvx,nnnx,mmmx);
        dcc();
+       gleE();
        
        }
+       
+       
         updateTotals();
         
         
@@ -277,6 +284,7 @@ function alve(){
         updateTotals();
         //drawChart();
         dcc();
+        gleE();
         randE();
         }
         
@@ -369,6 +377,8 @@ function alve(){
         }
         }
         
+        
+        
         function borww(x){
         let preDa=new Date();
          let lendP=parseInt(prompt("Enter Password to proceed : "));
@@ -419,12 +429,40 @@ function alve(){
         document.getElementById("ppr").appendChild(dii);
         //drawChart();
         dcc();
+        gleE();
         }
         }
         
         function printe(){
         window.print();
         }
+        
+        
+        
+        
+        
+        
+        
+        function gleE() {
+        if (cbala > cexp) {
+        a = "#FF0000";
+        } else if (cexp > cbala) {
+        a = "#008000";
+        } else {
+        a = "#87CEEB";
+        }
+        
+        document.body.style.borderTop = `10px solid ${a}`;
+        
+        let c = b;
+        b = a;
+        a = c;
+        
+        setTimeout(gleE, 500);
+        }
+        
+        gleE();
+        
         
         
         

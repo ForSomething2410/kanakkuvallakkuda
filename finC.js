@@ -76,6 +76,7 @@ google.charts.load("current", {packages:["corechart"]});
         google.charts.setOnLoadCallback(ddddd);
         }
         
+        gleE();
         
         }
         dcc();
@@ -89,9 +90,9 @@ google.charts.load("current", {packages:["corechart"]});
         data.addColumn('string', 'Category');
         data.addColumn('number', 'Amount');
         data.addRows([
-        ['Income', cin],
-        ['Expenses', cbala],
-        ['Balance', cexp]
+        ['Expence', cbala],
+        ['Balance', cexp],
+        ['Income', cin]
         ]);
         
         var options = {
@@ -121,3 +122,6 @@ google.charts.load("current", {packages:["corechart"]});
         var chart = new google.visualization.LineChart(document.getElementById('donutchart'));
         chart.draw(data, options);
         }
+        
+        
+        
