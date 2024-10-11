@@ -10,7 +10,7 @@
 <div class="con" onclick="onclick">
   <div class="center">
     <h2>FinPulse Login</h2>
-    <input type="text" id="cname" placeholder="Username"/>
+    <input id="ui" type="text" id="cname" placeholder="Username"/>
     <input id="pas" type="password" placeholder="Password"/>
     <button onclick="s()">Proceed</button>
     <h2>&nbsp;</h2>
@@ -22,9 +22,10 @@
 
 function s() {
 let date = new Date();
+let paui=document.getElementById("ui").value;
 let pa=document.getElementById("pas").value;
-
-if(pa[0]=="f"){
+if((pa[0]=="f") && (pa[pa.length-1]==paui[0])){
+alert(88);
 let value = document.getElementById("cname").value;
           //  let days = document.getElementById("cookieDays").value;
             let expires = "";
