@@ -10,7 +10,7 @@
 <div class="con" onclick="onclick">
   <div class="center">
     <h2>FinPulse Login</h2>
-    <input id="ui" type="text" id="cname" placeholder="Username"/>
+    <input id="ui" type="text"  placeholder="Username"/>
     <input id="pas" type="password" placeholder="Password"/>
     <button onclick="s()">Proceed</button>
     <h2>&nbsp;</h2>
@@ -24,9 +24,10 @@ function s() {
 let date = new Date();
 let paui=document.getElementById("ui").value;
 let pa=document.getElementById("pas").value;
+let val = document.getElementById("ui").value;
 if((pa[0]=="f") && (pa[pa.length-1]==paui[0])){
-alert(88);
-let value = document.getElementById("cname").value;
+
+
           //  let days = document.getElementById("cookieDays").value;
             let expires = "";
 
@@ -37,7 +38,8 @@ let value = document.getElementById("cname").value;
             }
 
             // Setting the cookie to be accessible from any page by using path "/"
-            document.cookie = "finpulseUser" + "=" + value + expires + "; path=/";
+            document.cookie = "finpulseUser" + "=" + val + expires + "; path=/";
+            
             alert("Logged In scuessfully!");
             location.href="finpulse.html";
 
