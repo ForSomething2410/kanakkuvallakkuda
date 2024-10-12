@@ -12,9 +12,6 @@
           --bor:gray;
           --tbor:white;
           }
-          *{
-          resize:both;
-          }
           
         body {
             color:var(--w);
