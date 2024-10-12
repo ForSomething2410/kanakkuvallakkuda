@@ -52,7 +52,7 @@ function alve(){
        
        let tsu=document.getElementById("texta");
        texSu=eval(tsu.value);
-       eveSu=lenSum+texSu;
+       eveSu=lenSum+texSu+otv+bI;
        document.getElementById("texsum").innerHTML=texSu;
        document.getElementById("evesum").innerHTML=eveSu;
        

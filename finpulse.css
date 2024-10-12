@@ -12,6 +12,9 @@
           --bor:gray;
           --tbor:white;
           }
+          *{
+          resize:both;
+          }
           
         body {
             color:var(--w);
@@ -657,6 +660,7 @@
         border-bottom:2px solid aqua;
         border-radius:4px;
         font-family:'Economica';
+        font-size:18px;
         }
         
        

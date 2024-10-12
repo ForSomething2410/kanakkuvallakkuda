@@ -6,7 +6,7 @@
     <title>Dark Mode Data Table</title>
     <style>
         body {
-            background-color: #121212;
+            background-color:black;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -21,6 +21,22 @@
             border-radius: 12px;
             padding:7px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            width:80%;
+            height:56vh;
+            display:flex;
+            flex-direction:column;
+            overflow-x:auto;
+            overflow-y:auto;
+
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        color:black;
+        resize:both;
         }
         table {
             width: 100%;
@@ -30,6 +46,9 @@
             padding: 15px;
             text-align: left;
             font-size: 16px;
+        }
+        tr{
+        border-bottom:1px solid grey;
         }
         th {
             background-color:transparent;
@@ -44,6 +63,11 @@
             background-color: #3b2f60;
             transition: 0.3s ease;
         }
+        
+        .famt{
+        color:lightgreen;
+        font-weight:bold;
+        }
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -57,14 +81,17 @@
 </head>
 <body>
 <script type="text/javascript">
-let uu = "https://picsum.photos/200/300/?blur=1";
+let uu = "https://picsum.photos/1500/1500/";
 document.body.style.background = `url('${uu}')`;
 document.body.style.backgroundSize = "cover";
 document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundColor="black";
 </script>
     <div class="table-container">
-        <h3 style="color: #ff8c42;">Frotu</h3>
-        <center><h3 id="fsu" style="color: #ff8c42;"></h3></center>
+    <div style="display:flex;flex-direction:column;">
+        <h3 style="color: #ff8c42;margin:0;padding:0;padding:5px;">Frotu</h3>
+        <center><h3 id="fsu" style="color: #ff8c42;margin:0;padding:0;padding:5px;border-bottom:2px solid #ff8c42;"></h3></center>
+        </div>
         
         <table>
             <thead>
@@ -115,6 +142,38 @@ document.body.style.backgroundRepeat = "no-repeat";
                 <td>11.10.24</td>
                 <td>Mahi Ayudha Puja</td>
                 </tr>
+                
+                <tr>
+                <td class="famt">100</td>
+                <td>12.10.24</td>
+                <td> Paytm Refer  Rajendra Anna</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">2</td>
+                <td>12.10.24</td>
+                <td>Paytm Cashback</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">5</td>
+                <td>12.10.24</td>
+                <td> Paytm Cashback</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td>12.10.24</td>
+                <td> Paytm Surya Anna Refer Check Credited</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td>12.10.24</td>
+                <td> Paytm Rajendra Anna Refer Check Credited</td>
+                </tr>
+                
+                
                 
             </tbody>
         </table>
