@@ -110,6 +110,8 @@
         }
         
         
+        
+        
         .parnt {
         display: flex;
         flex-direction: row;
@@ -131,7 +133,7 @@
         border: 1px solid var(--tbor);
         background-color:var(--w);
         backdrop-filter: blur(10px);
-
+        
         border-radius: 6px;
         border-left:3px solid var(--bor);
         }
@@ -203,9 +205,12 @@
         color:var(--b);
         }
         
+        
         .tdes {
-        width: 60%;
+        
        
+        width: 60%;
+        
         overflow-x:auto;
         white-space: nowrap;
         padding-left: 10px;
@@ -604,6 +609,7 @@
         
         
         
+        
         @media print{
         
         .bsea{
@@ -645,6 +651,104 @@
         padding:6px !important;
         margin:0px !important;
         border-bottom:2px solid black !important;
+        }
+        
+        .parnt {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap:wrap;
+        gap:20px;
+        background-color:var(--back);
+        justify-content:center;
+        border-radius: 8px;
+        
+        }
+        
+        .child {
+        display: flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:10px;
+        border: 1px solid var(--tbor);
+        background-color:var(--w);
+        backdrop-filter: blur(10px);
+        
+        border-radius: 6px;
+        border-left:3px solid var(--bor);
+        }
+        
+        .idfeb {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height::15px;
+        justify-content: space-around;
+        font-weight: bold;
+        align-items:center;
+        font-size: 14px;
+        padding-top:7px;
+        color:var(--b);
+        overflow-x:none;
+        font-family: Times New Roman, Times, serif;
+        
+        
+        }
+        .idfeb font{
+        font-family: Times New Roman, Times, serif;
+        
+        }
+        
+        .trand {
+        display: flex;
+        flex-direction:row;
+        
+        width: 100%;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+        border-top: 1px solid var(--bor);
+        padding-top: 10px;
+        font-family: Times New Roman, Times, serif;
+        
+        }
+        
+        .trans {
+        display: flex;
+        min-width:30%;
+        max-width:95%;
+        padding:5px;
+        
+        
+        border-left:1.5px solid var(--tbor);
+        
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        
+        }
+        
+        .mony, .tdate, .tdes {
+        font-size: 13px;
+        color: var(--b);
+        font-family: Times New Roman, Times, serif;
+        
+        }
+        
+        .mony {
+        
+        padding:2px;
+        
+        text-align: center;
+        font-weight: bold;
+        color:var(--b);
+        }
+        
+        .tdate {
+        
+        
+        text-align: center;
+        color:var(--b);
         }
         }
         
