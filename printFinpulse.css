@@ -3,7 +3,10 @@
         .bsea{
            display:none !important;
         }
-        #borwi,#adapa{
+        #adapa{
+display:block !important;
+        }
+        #borwi{
          display:none !important;
         }
         
