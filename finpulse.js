@@ -15,7 +15,7 @@ function gc() {
                 }
             }
             document.getElementById("acNa").innerText = "Profile";
-           location.href="login.html";
+           //location.href="login.html";
         }
         
 gc();
@@ -24,7 +24,7 @@ function dC() {
             let name = document.getElementById("acNa").innerText;
             document.cookie = "finpulseUser" + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             alert("loged out scuessfully.");
-            location.href="login.html";
+            /location.href="login.html";
         }
 
 let preNo = "";
