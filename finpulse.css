@@ -654,102 +654,90 @@
         }
         
         .parnt {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        flex-wrap:wrap;
-        gap:20px;
-        background-color:var(--back);
-        justify-content:center;
-        border-radius: 8px;
-        
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        background-color: var(--back) !important;
+        justify-content: center !important;
+        border-radius: 8px !important;
         }
         
         .child {
-        display: flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        gap:10px;
-        border: 1px solid var(--tbor);
-        background-color:var(--w);
-        backdrop-filter: blur(10px);
-        
-        border-radius: 6px;
-        border-left:3px solid var(--bor);
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 10px !important;
+        width: 100% !important;
+        border: 1px solid var(--tbor) !important;
+        background-color: var(--w) !important;
+        backdrop-filter: blur(10px) !important;
+        border-radius: 6px !important;
+        border-left: 3px solid var(--bor) !important;
         }
         
         .idfeb {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        min-height::15px;
-        justify-content: space-around;
-        font-weight: bold;
-        align-items:center;
-        font-size: 14px;
-        padding-top:7px;
-        color:var(--b);
-        overflow-x:none;
-        font-family: Times New Roman, Times, serif;
-        
-        
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        min-height: 15px !important;
+        justify-content: space-around !important;
+        font-weight: bold !important;
+        align-items: center !important;
+        font-size: 14px !important;
+        padding-top: 7px !important;
+        color: var(--b) !important;
+        font-family: Times New Roman, Times, serif !important;
         }
-        .idfeb font{
-        font-family: Times New Roman, Times, serif;
         
+        .idfeb font {
+        font-family: Times New Roman, Times, serif !important;
         }
         
         .trand {
-        display: flex;
-        flex-direction:row;
-        
-        width: 100%;
-        flex-wrap:wrap;
-        justify-content:center;
-        align-items:center;
-        border-top: 1px solid var(--bor);
-        padding-top: 10px;
-        font-family: Times New Roman, Times, serif;
-        
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        border-top: 1px solid var(--bor) !important;
+        padding-top: 10px !important;
+        font-family: Times New Roman, Times, serif !important;
         }
         
         .trans {
-        display: flex;
-        min-width:30%;
-        max-width:95%;
-        padding:5px;
-        
-        
-        border-left:1.5px solid var(--tbor);
-        
-        flex-direction: row;
-        justify-content:space-around;
-        align-items: center;
-        
+        display: flex !important;
+        width: 95% !important;
+        padding-top: 5px !important;
+        gap: 10px !important;
+        padding-bottom: 5px !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center !important;
         }
         
         .mony, .tdate, .tdes {
-        font-size: 13px;
-        color: var(--b);
-        font-family: Times New Roman, Times, serif;
-        
+        font-size: 13px !important;
+        color: var(--b) !important;
+        font-family: Times New Roman, Times, serif !important;
         }
         
         .mony {
-        
-        padding:2px;
-        
-        text-align: center;
-        font-weight: bold;
-        color:var(--b);
+        width: 18% !important;
+        padding-left: 2% !important;
+        overflow-x: auto !important;
+        text-align: center !important;
+        font-weight: bold !important;
+        color: var(--b) !important;
         }
         
         .tdate {
-        
-        
-        text-align: center;
-        color:var(--b);
+        width: 20% !important;
+        overflow-x: auto !important;
+        text-align: center !important;
+        color: var(--b) !important;
         }
+        
+        
         }
         
         #dccc{
