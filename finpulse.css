@@ -51,6 +51,7 @@
             background: linear-gradient(44deg, rgb(36, 233, 244), rgb(160, 114, 223), rgb(217, 160, 121));
             color: transparent;
             background-clip: text;
+            
         }
         #allin{
         color:var(--inc);
@@ -62,6 +63,10 @@
         #bal{
         color:var(--bal);
         
+        }
+        
+        #allin:hover, #exp:hover, #bal:hover, #exex:hover{
+        animation:1s mbwid ;
         }
         #sta ,#staa{
             display: flex;
@@ -531,5 +536,42 @@
         border-radius:4px;
         font-family:'Economica';
         font-size:18px;
+        width:100%;
         }
+        
+      
+        
+        @keyframes mbwid{
+        
+        0%{
+        transform:scale(1.0);
+        }
+        50%{
+        transform:scale(0.8);
+        
+        }
+        100%{
+        transform:scale(1.0);
+        }
+        
+        }
+        
+        
+        .bi{
+        border:1px solid var(--tbor);
+        padding:5px;
+        border-radius:5px;
+        
+        }
+        .bi:hover{
+        color:red;
+        
+        }
+        
+        .bi:nth-child(2){
+        border-radius:50%;
+        }
+        
+        
+        
         

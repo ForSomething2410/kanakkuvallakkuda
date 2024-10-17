@@ -1,3 +1,17 @@
+let every=document.getElementById("texta");
+
+
+
+
+document.querySelector("#exex").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
+document.querySelector("#allin").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
+document.querySelector("#exp").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
+document.querySelector("#bal").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
+document.querySelector(".bi-plus").addEventListener("click",(e)=>{every.value += "+"});
+document.querySelector(".bi-dash").addEventListener("click",(e)=>{every.value += "-"});
+document.querySelector(".bi-arrow-counterclockwise").addEventListener("click",(e)=>{every.value =""});
+
+
 function gc4() {
             let cookies = document.cookie;
           document.getElementById("acNa").innerText = cookies ? cookies : location.href="login.html";
@@ -15,7 +29,7 @@ function gc() {
                 }
             }
             document.getElementById("acNa").innerText = "Profile";
-           location.href="login.html";
+          location.href="login.html";
         }
         
 gc();
@@ -462,6 +476,11 @@ function alve(){
         }
         
         gleE();
+        
+        
+        
+        
+        
         
         
         

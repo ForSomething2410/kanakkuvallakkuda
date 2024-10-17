@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" type="image/png" href="finpulse-favicon.png">
     <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <script type="text/javascript">
 
 async function getDataa(){
@@ -170,7 +171,7 @@ getDataa();
         <p>INCOME</p>
         <p>EXPENCE</p>
         <p>BALANCE</p>
-        <p>TRAN EXP</p>
+        <p>TEML EXP</p>
         </div>
         <div id="sta">
        
@@ -201,6 +202,11 @@ getDataa();
            <td><input oninput="alve()" value="0" id="oth"></td>
         </tr>
         
+        <tr style="padding:0px;margin:0px;">
+           <td><span class="bi bi-plus" style="font-size:1.0rem;margin:0px;"> </span></td>
+           <td><span class="bi bi-dash" style="font-size:1.0rem;margin:0px;"> </span></td>
+           <td> <span id="ro"  class="bi bi-arrow-counterclockwise" style="font-size:1.0rem;margin:0px;">  </span></td>
+        </tr>
         <tr>
         <td colspan="3"><textarea oninput="alve()" id="texta">0</textarea></td>
         
