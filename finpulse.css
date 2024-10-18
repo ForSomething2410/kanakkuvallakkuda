@@ -524,7 +524,7 @@
         background-color:transparent;
         color:var(--b);
         text-align:center;
-        border:2px dashed var(--tbor);
+        border:2px solid var(--tbor);
         border-radius:50%;
         }
         
@@ -570,6 +570,23 @@
         
         .bi:nth-child(2){
         border-radius:50%;
+        }
+        
+        
+        #cmode{
+        position:relative;
+        top:90%;
+        left:-1px;
+        z-index:10;
+        width:53px;
+        accent-color:red;
+        background-color:black;
+        color:var(--b);
+        text-align:center;
+        margin:0px;
+        padding:0px;
+        border:1px dashed red;
+        border-radius:50px;
         }
         
         

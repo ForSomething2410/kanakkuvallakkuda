@@ -1,3 +1,5 @@
+
+
 google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(dd);
       
@@ -21,9 +23,21 @@ google.charts.load("current", {packages:["corechart"]});
         
        
         function ddd() {
+       
+        let chrtDIN = cin;
+        let chrtDEXP = cbala;
+        let chrtDBAL = cexp;
+        let chrtTex= parseInt(document.getElementById("exex").innerHTML);
+        /*
+        if(document.getElementById("cmode").checked){
+        
+        chrtDIN=0;
+        chrtDBAL=0;
+        }
+        */
         var data = google.visualization.arrayToDataTable([
-        ['Category', 'Income', 'Expenses', 'Balance'],
-        ['',cin,cbala,cexp]
+        ['Category', 'Income', 'Balance', 'All Expence',"Step"],
+        ['',chrtDIN,chrtDBAL,chrtDEXP,chrtTex]
         ]);
         
         var options = {
@@ -40,7 +54,7 @@ google.charts.load("current", {packages:["corechart"]});
         baselineColor: 'black',      
         textPosition: 'none'     
         },
-        colors: ['green', 'red', '#007bff'],  
+        colors: ['green', '#007bff','red','orange'],  
         chartArea: {
         width: '92%', 
         height: '92%'  
@@ -53,6 +67,10 @@ google.charts.load("current", {packages:["corechart"]});
         }
         
         function dcc(){
+       
+        
+        
+        //alert(chrtTex);
         //alert(555);
         google.charts.load("current", {packages:["corechart"]});
         
@@ -90,9 +108,9 @@ google.charts.load("current", {packages:["corechart"]});
         data.addColumn('string', 'Category');
         data.addColumn('number', 'Amount');
         data.addRows([
-        ['Expence', cbala],
+        ['Expence', cin],
         ['Balance', cexp],
-        ['Income', cin]
+        ['Income', cbala]
         ]);
         
         var options = {

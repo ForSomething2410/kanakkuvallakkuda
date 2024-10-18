@@ -29,7 +29,7 @@ function gc() {
                 }
             }
             document.getElementById("acNa").innerText = "Profile";
-          location.href="login.html";
+         location.href="login.html";
         }
         
 gc();
@@ -198,7 +198,7 @@ function alve(){
         let parDI = parD[i];
         if (parDI.style.display !== "none") { 
         let tranDD = parDI.getElementsByClassName('trans');
-        
+        //alert(tranDD);
         for (let j = 0; j < tranDD.length; j++) {
         let transDiv = tranDD[j];
         if (transDiv.style.display !== "none") {
@@ -211,6 +211,7 @@ function alve(){
         }
         }
         document.getElementById('exex').innerHTML=tttexe;
+        
         }
         }
         
