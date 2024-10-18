@@ -29,7 +29,7 @@ function gc() {
                 }
             }
             document.getElementById("acNa").innerText = "Profile";
-         location.href="login.html";
+             location.href="login.html";
         }
         
 gc();

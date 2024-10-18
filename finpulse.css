@@ -481,10 +481,35 @@
         
         display:flex;
         width:100%;
-        flex-direction:column;
+        flex-direction:row;
         flex-wrap:wrap;
+        justify-content:space-around;
+        gap:10px;
+        }
+        
+        .getCS{
+        
+        display:flex;
+        margin:0px;
+        padding:0px;
+        display:flex;
+        width:40%;
+        justify-content:space-between;
+        align-items:center;
+        }
+        .getCS span{
+        color:var(--b);
+        transition:0.5s;
+        }
+        
+        .getCS span:hover{
+        color:red;
+        transform:scale(1.6);
         
         }
+        
+        
+        
          table{
        width:100%;
        color:var(--b);
@@ -591,6 +616,30 @@
         border:1px dashed red;
         border-radius:50px;
         }
+        
+        
+        @keyframes appear {
+        from {
+        opacity:0.5;
+        transform:scale(0.2);
+        
+        }
+        to {
+        opacity: 1;
+        transform:scale(1.0);
+        }
+        }
+        
+        .child{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 18%;
+        }
+        
+        
+        
+        
+        
         
         
         

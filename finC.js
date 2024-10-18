@@ -28,6 +28,9 @@ google.charts.load("current", {packages:["corechart"]});
         let chrtDEXP = cbala;
         let chrtDBAL = cexp;
         let chrtTex= parseInt(document.getElementById("exex").innerHTML);
+        //let chrtLend= parseInt(document.getElementById("lenI").value);
+        
+        //alert(chrtLend);
         /*
         if(document.getElementById("cmode").checked){
         

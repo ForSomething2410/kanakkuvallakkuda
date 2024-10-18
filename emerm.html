@@ -1,0 +1,217 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fin-emergency</title>
+    <script type="text/javascript" src="projltr.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style type="text/css">
+body {
+            background-color:black;
+          /*  background:url(https://picsum.photos/1500/1500/); */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+
+.prcnt {
+        
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        z-index: 5;
+        left: 50%;
+        top: 50%;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.2);
+        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        backdrop-filter: blur(10px); 
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        border-radius: 10px;
+        border: 0.6px solid black;
+       
+            background:
+rgba( 255, 255, 255, 0.25 );
+box-shadow:
+0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter:
+blur( 6.5px );
+-webkit-backdrop-filter:
+blur( 6.5px );
+border-radius:
+10px;
+border:
+1px solid rgba( 255, 255, 255, 0.18 );
+            backdrop-filter: blur(10px);
+background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .prcnt{
+        animation: fly 0.3s;
+        }
+        @keyframes fly {
+        0%{
+        transform: translate(-50%,-50%);opacity: .50;
+        }
+        100%{
+        transform: translate(-50%,-50%);opacity:1;
+        }
+        }
+        
+        .prcnt input, .prcnt button, .prcnt p ,.prcnt select{
+        margin: 7px;
+        padding: 8px;
+        width: 80%;
+        color: black;
+        display:none;
+        background-color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prcnt button {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: background-color 0.3s ease;
+        }
+        
+        .prcnt button:hover {
+        background-color: rgba(255, 255, 255, 1);
+        }
+        
+        
+        
+        
+        .percan{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+        justify-content:space-between;
+        align-items:center;
+        }
+        
+        .percan span{
+        color:black;
+        padding:5px;
+        }
+        
+        
+</style>
+
+</head>
+
+<body ondblclick="ppp()">
+
+<div id="prcntt" class="prcnt">
+    <div class="percan">
+    <span> Working On Emergency Money Functionality... </span><span onclick="qqq()"><i class="material-icons" style="font-size:28px;color:black">cancel</i></span>
+    </div>
+    <center>
+    <select onchange="inpast(this.value)" id="selmed">
+    <option value="s3">Methods</option>
+    <option value="s1">what is 50% of 100</option>
+    <option value="s2">50 what is percent of 100</option>
+    </select>
+    <input id="pv1">
+    <input id="pv2">
+    <button onclick="percal()">How Much</button>
+    
+    <p id="pout">OutPut Will Display Here</p>
+    </center>
+    </div>
+
+
+<script type="text/javascript">
+
+
+let uu = "https://picsum.photos/1700/1700/";
+document.body.style.background = `url('${uu}')`;
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundColor="black";
+
+
+function inpast(x){
+    if(x=="s1"){
+    let ggg=Math.floor(Math.random() * 100);
+    let gg=Math.floor(Math.random() * 8000);
+    
+    document.getElementById("pv1").placeholder=ggg+" %";
+    document.getElementById("pv2").placeholder=gg+" rs";
+    }
+    
+    if(x=="s2"){
+    let ggg=Math.floor(Math.random() * 100);
+    let gg=Math.floor(Math.random() * 8000);
+    
+    document.getElementById("pv1").placeholder=ggg;
+    document.getElementById("pv2").placeholder=gg+" rs";
+    }
+    
+    }
+    
+    function ppp(){
+    document.getElementById("prcntt").style.display="block";
+    }
+    
+    function qqq(){
+    document.getElementById("prcntt").style.display="none";
+    }
+    
+    
+    function percal(){
+    
+    let selm=document.getElementById("selmed").value;
+    let p1=parseInt(document.getElementById("pv1").value);
+    let p2=parseInt(document.getElementById("pv2").value);
+    
+    
+    if(selm=="s1"){
+    if(p1>100){
+    document.getElementById("pout").style.backgroundColor="red";
+    document.getElementById("pout").innerHTML="please enter percent less than 100 or equalbto 100";
+    }
+    else{
+    let perc=p1/100*p2;
+    perc=perc.toFixed(2);
+    document.getElementById("pout").style.backgroundColor="transparent";
+    document.getElementById("pout").innerHTML=perc;
+    }
+    }
+    
+    if(selm=="s2"){
+    if(p1<=p2){
+    let perc1=p1/p2*100;
+    
+    perc1=perc1.toFixed(2);
+    document.getElementById("pout").style.backgroundColor="transparent";
+    document.getElementById("pout").innerHTML=perc1+" %";
+    }
+    else{
+    document.getElementById("pout").style.backgroundColor="red";
+    document.getElementById("pout").innerHTML="Please Enter First Value less than or equal to second Value";
+    }
+    
+    }
+    
+    if(selm=="s3"){
+    alert("please select the methods.");
+    }
+    
+    }
+</script>
+
+</body>
+</html>
