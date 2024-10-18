@@ -12,13 +12,16 @@
           --bor:gray;
           --tbor:white;
           }
-          
+         html{
+          scroll-behavior:smooth;
+          }
         body {
             color:var(--w);
             background-color:var(--back);
           font-family: Times New Roman, Times, serif;
             margin:0px;
             padding:8px;
+            
             
         }
 
