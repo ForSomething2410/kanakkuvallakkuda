@@ -1,0 +1,101 @@
+@media (min-width:720px){
+      
+      .parnt {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      flex-wrap:wrap;
+      gap:20px;
+      background-color:var(--back);
+      justify-content:center;
+      border-radius: 8px;
+      }
+      
+      .child {
+      display: flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      
+      gap:10px;
+      width:100%;
+      border: 1px solid var(--tbor);
+      background-color:var(--w);
+      backdrop-filter: blur(10px);
+      
+      border-radius: 6px;
+      border-left:3px solid var(--bor);
+      }
+      
+      .idfeb {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      
+      min-height::15px;
+      justify-content: space-around;
+      font-weight: bold;
+      align-items:center;
+      font-size: 14px;
+      padding-top:7px;
+      color:var(--b);
+      overflow-x:none;
+      font-family: Times New Roman, Times, serif;
+      
+      
+      }
+      .idfeb font{
+      font-family: Times New Roman, Times, serif;
+      
+      }
+      
+      .trand {
+      display: flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      width: 100%;
+      
+      justify-content:space-evenly;
+      border-top: 1px solid var(--bor);
+      padding: 10px;
+      font-family: Times New Roman, Times, serif;
+      
+      }
+      
+      .trans {
+      display: flex;
+      border-radius:10px;
+      padding:5px;
+      gap:10px;
+      margin:5px;
+      flex-direction: row;
+      justify-content:center;
+      align-items: center;
+      border-left:2px solid var(--tbor);
+      }
+      
+      .mony, .tdate, .tdes {
+      font-size: 13px;
+      color: var(--b);
+      font-family: Times New Roman, Times, serif;
+      
+      }
+      
+      .mony {
+      text-align: center;
+      font-weight: bold;
+      color:var(--exp);
+      }
+      
+      .tdate {
+      text-align: center;
+      color:var(--b);
+      }
+      
+      
+      .tdes {
+      
+      white-space: nowrap;
+      padding-left: 10px;
+      }
+      
+      }

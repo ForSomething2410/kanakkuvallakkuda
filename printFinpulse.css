@@ -1,0 +1,80 @@
+@media print{
+        
+        .bsea{
+           display:none !important;
+        }
+        #adapa{
+display:block !important;
+        }
+        #borwi{
+         display:none !important;
+        }
+        
+        
+        :root {
+        --inc:black !important; 
+        --bal:black !important; 
+        --exp:black !important;
+        --texp:black !important; 
+        --o1k:black !important;
+        --w:#FFFFFF !important;
+        --b:black !important;
+        --red:white !important;
+        --gray:white !important;
+        --back:#f0f0f0 !important;
+        --bor:black !important;
+        --tbor:black !important;
+        
+        }
+        
+        body{
+        padding:10px !important;
+        border:3px solid black !important;
+        border-bottom:none !important;
+        }
+        .cra ,.sinp,#canb,.om,#yyyy,.menu,#tttim,.adimg,.alver{
+        display:none !important;
+        }
+        #adapa{
+        color:black !important;
+        text-align:left !important;
+        width:100% !important;
+        padding:6px !important;
+        margin:0px !important;
+        border-bottom:2px solid black !important;
+        }
+        
+        .fysC{
+        color:red !important;
+        width:98% !important;
+        margin:2px !important;
+        background-color:var(--w) !important;
+        border-top:1px solid var(--tbor) !important;
+        border-right:1px solid var(--tbor) !important;
+        border-bottom:1px solid var(--tbor) !important;
+        border-radius:5px !important;
+        border-left:3px solid var(--bor) !important;
+        }
+        
+        .fysIn div,.fysEx div{
+        display:flex !important;
+        width:100% !important;
+        padding:3px !important;
+        justify-content:space-between !important;
+        align-items:center !important;
+        border-bottom:1px solid var(--bor) !important;
+        }
+        .fysIn,.fysEx{
+        padding:10px !important;
+        }
+        .fysIn h3,.fysEx h3{
+        padding:2px !important;
+        margin:2px !important;
+        text-align:left !important;
+        color:orange !important;
+        }
+        
+        
+        
+        
+        }

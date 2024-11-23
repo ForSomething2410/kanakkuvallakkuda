@@ -1,0 +1,54 @@
+
+<html >
+<head>
+  <title>login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="con" onclick="onclick">
+  <div class="center">
+    <h2>FinPulse Login</h2>
+    <input id="ui" type="text"  placeholder="Username"/>
+    <input id="pas" type="password" placeholder="Password"/>
+    <button onclick="s()">Proceed</button>
+    <h2>&nbsp;</h2>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+
+function s() {
+let date = new Date();
+let paui=document.getElementById("ui").value;
+let pa=document.getElementById("pas").value;
+let val = document.getElementById("ui").value;
+if((pa[0]=="f") && (pa[pa.length-1]==paui[0])){
+
+
+          //  let days = document.getElementById("cookieDays").value;
+            let expires = "";
+
+            if (true) {
+                let date = new Date();
+                date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+
+            // Setting the cookie to be accessible from any page by using path "/"
+            document.cookie = "finpulseUser" + "=" + val + expires + "; path=/";
+            
+            alert("Logged In scuessfully!");
+            location.href="finpulse.html";
+
+}
+
+        }
+        
+        
+
+</script>
+</body>
+</html>

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.cdnfonts.com/css/fake-receipt" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FROTU</title>
+    <style>
+        body {
+            background-color:black;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Times New Roman";
+            
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .tabcon {
+            background-color:black;
+            border-radius: 12px;
+            padding:7px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            width:80%;
+            height:56vh;
+            display:flex;
+            flex-direction:column;
+            overflow-x:auto;
+            overflow-y:auto;
+
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        padding: 20px;
+        color:black;
+        resize:both;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            font-size: 16px;
+        }
+        tr{
+        border-bottom:1px solid grey;
+        }
+        th {
+            background-color:transparent;
+            color: #ff8c42;
+            font-weight: bold;
+        }
+        td {
+            background-color:transparent;
+            color: #ffffff;
+        }
+        tr:hover td {
+            background-color: #3b2f60;
+            transition: 0.3s ease;
+        }
+        
+        .famt{
+        color:lightgreen;
+        font-weight:bold;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+            #finImg{
+            display:none !important;
+            }
+        }
+        
+        
+        .seaEx{
+        margin:0px;
+        padding:0px;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        }
+        
+        h3{
+        color:#ff8c42;
+        }
+        
+        .seaEC{
+        display:flex;
+        justify-content:flex-end;
+        gap:10px;
+        align-items:center;
+        }
+        
+        .seaEC input{
+        
+        background-color:transparent;
+        width:10%;
+        border-radius:7px;
+        border:none;
+        color:#ff8c42;
+        transition:0.5s ease-out;
+        }
+        .seaEC input:hover{
+        
+        width:50%;
+        border:1.5px solid #ff8c42;
+        }
+        
+        #frtY{
+        
+        font-size:60%;
+        }
+        
+        #finImg{
+        display:none !important;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        @media print {
+        
+        body {
+        color: black !important;
+        font-family: 'Fake Receipt', sans-serif !important;                                               
+        margin: 0 !important;
+        padding: 5px !important;
+        display: block !important;
+        border-bottom:2px solid black !important;
+        border-top:2px solid black !important;
+        
+        }
+        .tabcon {
+        background-color: black !important;
+        border-radius: 12px !important;
+        padding: 10px !important;
+        width: 80% !important;
+        display: block !important;
+        height:100% !important;
+        width: 100% !important;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.4);
+        flex-direction: column !important;
+        justify-content:flex-start !important;
+        align-items:top !important;
+        color: black !important;
+        }
+        table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        }
+        th, td {
+        padding: 7px !important;
+        text-align:left !important;
+        font-size: 14px !important;
+        }
+        tr {
+        border-bottom: 1px solid black !important;
+        }
+        th {
+        background-color: transparent !important;
+        color: black !important;
+        font-weight: bold !important;
+        }
+        td {
+        background-color: transparent !important;
+        color: black !important;
+        }
+        .famt {
+        color: black !important;
+        font-weight: bold !important;
+        }
+        .seaEx {
+        
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: top !important;
+        font-size:15px;
+        font-weight:bold !important;
+        }
+        .seaEC {
+        
+        display: none !important;
+        
+        }
+        h3{
+        
+        color:black !important;
+        font-size:30px !important;
+        }
+        #fsu{
+        font-size:20px !important;
+        
+        }
+        #finImg{
+        display:block !important;
+        }
+        
+        
+        }
+        
+       
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+let uu = "https://picsum.photos/1500/1500/";
+document.body.style.background = `url('${uu}')`;
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundColor="black";
+</script>
+    <div class="tabcon">
+    <div style="display:flex;flex-direction:column;">
+    </div>
+    <div class="seaEx">
+    <i class="bi bi-music-note-beamed"></i>
+    <img id="finImg" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/finpulse-full4.png" style="justify-content:flex-start;align-items:left;" width="45%" height="15%" >
+    <h3 id="frt" style="margin:0;padding:0;padding:5px;">Frotu <br> <sup id="frtY"> 2024-25 </sup></h3>
+    <div class="seaEC">
+    <input oninput="srh()" id="sea" type="text" placeholder="&#128269" > <span style="border:none;font-size:1.3rem;color:#ff8c42" onclick="location.href='finpulse.html#frotuiid'" class="bi bi-wallet2"></span>     <span style="border:none;font-size:1.3rem;color:#ff8c42" onclick="location.href='WoodPecker.html'" class="bi bi-bank"></span>   <span style="border:none;font-size:1.3rem;color:#ff8c42" onclick="pri(this) " onmouseover="pri('hover')" class="bi bi-printer"></span>
+    
+    </div>
+    </div>
+        <cent1er><h3 id="fsu" style="margin:0;padding:0;padding:5px;border-bottom:2px solid #ff8c42;text-align:center;"></h3></center>
+        
+        
+        
+        
+        
+       
+        <table id="tabgif">
+            <thead>
+                <tr>
+                    <th>Frotu</th>
+                    <th> Date</th>
+                    <th>From</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="famt">1080</td>
+                    <td>13.8.24</td>
+                    <td>Security OT</td>
+                </tr>
+                <tr>
+                    <td class="famt">540</td>
+                    <td>9.9.24</td>
+                    <td>Security OT</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">5</td>
+                <td>2.10.24</td>
+                <td>got from train</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">100</td>
+                <td>3.10.24</td>
+                <td>Helped To B202  GrandFather ,  So Madam Give 100rs Gift.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">25</td>
+                <td>5.10.24</td>
+                <td>A402 Manjunath  Sir Give 25rs for  reciving Amzon COD Order</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">1126</td>
+                <td>7.10.24</td>
+                <td>Security OT</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">700</td>
+                <td>11.10.24</td>
+                <td>Mahi Ayudha Puja</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">100</td>
+                <td>12.10.24</td>
+                <td> Paytm Refer  Rajendra Anna</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">2</td>
+                <td>12.10.24</td>
+                <td>Paytm Cashback</td>
+                </tr>
+                
+                <tr>
+                <td class="famt">5</td>
+                <td>12.10.24</td>
+                <td> Paytm Cashback</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td>12.10.24</td>
+                <td> Paytm Surya Anna Refer Check Credited</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td>12.10.24</td>
+                <td> Paytm Rajendra Anna Refer Check Credited</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 200 </td>
+                <td>13.10.24</td>
+                <td> From Mahi <b>Bhargav Sir,</b> for Shifting Boxes</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td>13.10.24</td>
+                <td> Paytm CashBack</td>
+                </tr>
+               
+                <tr>
+                <td class="famt"> 2 </td>
+                <td>13.10.24</td>
+                <td> Paytm CashBack</td>
+                </tr>
+                
+                
+                <tr>
+                <td class="famt"> 2 </td>
+                <td>14.10.24</td>
+                <td> Paytm CashBack</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td>15.10.24</td>
+                <td> Paytm CashBack</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 100 </td>
+                <td>17.10.24</td>
+                <td> from mahi B202 Madam, for helping her grandfather.</td>
+                </tr>
+                
+                
+                <tr>
+                <td class="famt"> 700 </td>
+                <td>24.10.24</td>
+                <td> Cash Savings by Vignesh/Pavan.</td>
+                </tr>
+                
+                
+                <tr>
+                <td class="famt"> 600 </td>
+                <td>26.10.24</td>
+                <td> Pavan Sell Provugue Bag to Friend [ pranav ].</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 250 </td>
+                <td>26-28.10.24</td>
+                <td> Added By Dad to Pavan [ frotu ] Due to pavan teeth removal.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 3000 </td>
+                <td> 30.10.24 </td>
+                <td> From Mahi Diwali Bonus.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 200 </td>
+                <td> 31.10.24 </td>
+                <td> From Mahi A110 Narain Sir Diwali Gift.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 500 </td>
+                <td> 1.11.24 </td>
+                <td> From Mahi A205 Aditya Sir Diwali Gift.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 5 </td>
+                <td> 31.10.24 </td>
+                <td> Gpay CashBack</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1 </td>
+                <td> 2.11.24 </td>
+                <td> From Mahi A402 Sir Amzon Order Balance </td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 70 </td>
+                <td> 1.11.24 </td>
+                <td> From Mahi B202 SaiPriya Madam For Helping GrandFather.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 150 </td>
+                <td> 2.11.24 </td>
+                <td> From Mahi B202 SaiPriya Madam For Helping GrandFather.</td>
+                </tr>
+                
+                
+                <tr>
+                <td class="famt"> 6 </td>
+                <td> 3.11.24 </td>
+                <td> Gpay Cash Back For Recharging 200rs.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 5 </td>
+                <td> 4.11.24 </td>
+                <td> Gpay CashBack.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 121 </td>
+                <td> 6.11.24 </td>
+                <td> From IOB Bank Int.Pd [ Intrest Paid ]</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 50 </td>
+                <td> 7.11.24 </td>
+                <td> From A110 Narain Sir Mahi For Paid Cab 200rs So Sir Return Paid 250rs.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 4 </td>
+                <td> 9.11.24 </td>
+                <td> From Google Pay Rewards.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 100 </td>
+                <td> 10.11.24 </td>
+                <td> From Mahi B202 SaiPriya Madam For Helping to GrandFather.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 1</td>
+                <td> 17.11.24 </td>
+                <td> From VadiMama For Receiving Flipkart Order.</td>
+                </tr>
+                
+                <tr>
+                <td class="famt"> 100 </td>
+                <td> 17.11.24 </td>
+                <td> From Mahi B202 SaiPriya Madam For Helping to GrandFather.</td>
+                </tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <tr>
+                <td> <span style="color:red;"><b>Laptop</b></span> </td>
+                <td>10.10.24</td>
+                <td> <p> Mahi <b> <span style="color:red;"> Phaniraj Sir</b> </span>gave an Asus VivoBook 15 <b>laptop</b> to Vignesh as Ayudha Poja Gift on 10.10.2024 for <b>studying,</b> priced at <b>₹48,660.</b></p>
+                 </td>
+                </tr>
+                
+                <tr>
+                <td class="famt" style="color:red;"> 253 </td>
+                <td> 1.11.24 </td>
+                <td> <b>Pranav </b>Gifted the worth of 253 ruppes FlipKart Gift Card to Vignesh.</td>
+                </tr>
+                
+                
+                
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <datalist id="sea">
+    <option value="gift">
+    <option value="cashback">
+    <option value="bonus">
+    <option value="help">
+    </datalist>
+    <script type="text/javascript">
+    
+    function pri(x){
+    if(x=='hover'){
+    document.getElementsByClassName(x.className)[0].className="bi bi-printer-fill";
+    
+    }
+    else{
+    document.getElementsByClassName(x.className)[0].className="bi bi-printer-fill";
+    window.print();
+    }
+    }
+    
+    
+    function famtC(){
+    
+    let fam=document.getElementsByClassName("famt");
+    let fsum=0;
+    for(let f=0;f<fam.length;f++){
+    if(fam[f].closest('tr').style.display !=='none'){
+    fsum+=parseInt(fam[f].innerHTML);
+    }
+    
+    
+    }
+    //alert(fsum);
+    document.getElementById("fsu").innerHTML=`&Sigma; = ${fsum}`;
+    console.log(fsum);
+    }
+    
+    famtC();
+    
+    function srh() {
+    const searchValue = document.getElementById('sea').value.toLowerCase();
+    const rows = document.querySelectorAll('#tabgif tbody tr');
+    
+    rows.forEach(row => {
+    const cells = row.getElementsByTagName('td');
+    let matchFound = false;
+    
+    for (let i = 0; i < cells.length; i++) {
+    if (cells[i].textContent.toLowerCase().includes(searchValue)) {
+    matchFound = true;
+    break;
+    }
+    }
+    
+    row.style.display = matchFound ? '' : 'none';
+    famtC();
+    });
+    
+    famtC();
+    }
+    
+    </script>
+</body>
+</html>

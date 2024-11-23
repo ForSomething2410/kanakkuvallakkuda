@@ -1,0 +1,71 @@
+.fysC{
+display:none;
+color:red;
+width:98%;
+margin:2px;
+background-color:var(--w);
+border-top:1px solid var(--tbor);
+border-right:1px solid var(--tbor);
+border-bottom:1px solid var(--tbor);
+border-radius:5px;
+border-left:3px solid var(--bor);
+
+}
+
+.fysIn div,.fysEx div{
+display:flex;
+width:600px;
+padding:3px;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid var(--bor);
+text-align:left;
+}
+
+.fysIn div:hover,.fysEx div:hover{
+background-color:#363636;
+}
+.fysIn div,.fysEx div font{
+text-align:center;
+}
+.fysIn,.fysEx{
+padding:10px;
+overflow-x:auto;
+overflow-y:auto;
+}
+.fysIn h3,.fysEx h3{
+padding:2px;
+margin:2px;
+text-align:left;
+color:orange;
+}
+
+
+.bi-ubuntu{
+margin:0px;
+display:flex;
+justify-content:center;
+align-items:center;
+
+animation: irot 6s linear infinite;
+
+}
+
+@keyframes irot{
+
+0%{
+transform:rotate(0deg);
+
+}
+
+50%{
+transform:rotate(180deg);
+}
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+
+
