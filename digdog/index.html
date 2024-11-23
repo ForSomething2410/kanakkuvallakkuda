@@ -1,0 +1,497 @@
+
+<html>
+<head>
+<link rel="icon" type="image/png" href="digdog-favi.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://microintel.github.io/multiverse/multiverse.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <title>DigDog</title>
+<link rel="stylesheet" href="./style.css">
+
+<style type="text/css">
+
+input{
+
+width:71%;
+padding:6px;
+background-color:transparent;
+border:2px solid white;
+border-radius:10px;
+color:white;
+transition:0.8s;
+}
+
+.pro{
+background-color:#FAF9F6;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:5px;
+border-radius:7px;
+
+}
+h5{
+color:black;
+font-family:monospace;
+line-height:20px;
+background-color:#FAF9F6;
+padding:3px;
+border-radius:7px;
+}
+span{
+color:red;
+}
+
+span:hover{
+
+color:grey;
+}
+
+input::placeholder{
+
+color:red;
+}
+
+
+@media (min-width:720px){
+.pro{
+height:30%;
+}
+
+#warr{
+min-width:9%;
+min-height:90%;
+width:9%;
+height:90%;
+max-width:9%;
+max-height:90%;
+
+}
+
+}
+.sda{
+display:flex;
+justify-content:space-around;
+align-items:center;
+}
+i{
+color:white;
+font-size:1.7rem;
+transition:0.8s;
+}
+i:hover{
+color:red;
+transform:scale(1.09);
+}
+input:hover{
+border:2px solid red;
+transform:scale(1.05);
+}
+
+#warr{
+min-width:30%;
+min-height:90%;
+width:30%;
+height:90%;
+max-width:30%;
+max-height:90%;
+
+}
+
+details{
+color:white;
+border:1.5px solid #6C757E;
+padding:2px;
+text-align:left;
+background-color:#2B3034;
+border-radius:7px;
+margin:5px;
+}
+details:hover{
+border:1.5px solid white;
+}
+summary::marker{
+color:red;
+font-size:1.5rem;
+margin-right:10px;
+font-weight:bold;
+}
+
+details[open] > summary{
+
+list-style-type:'→';
+}
+summary{
+list-style-position:inside;
+list-style-type:'↑';
+
+}
+summary:hover{
+color:red;
+}
+
+.conda{
+display:flex;
+width:95%;
+gap:0px;
+margin:10px;
+padding:0px;
+justify-content:space-between;
+align-items:center;
+border-top:2px solid #6C757E;
+border-bottom:2px solid #6C757E;
+background-color:#2B3034;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+border-right:none;
+color:white;
+}
+.conda input,.conda p,.conda i{
+height:2rem;
+margin:0px;
+padding:5px;
+background-color:transparent;
+color:white;
+display:flex;
+flex-direction:coloumn;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+}
+.conda input{
+
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+width:20%;
+font-size:0.7rem;
+border-top:none;
+border-bottom:none;
+border-left: 2px solid #6C757E;
+border-right:2px solid #6C757E;
+
+}
+.conda p{
+width:56%;
+display:flex;
+padding:10px;
+overflow-x:auto;
+font-size:0.7rem;
+}
+.conda input::placeholder{
+color:white;
+}
+
+.bi,.conda p,.conda input{
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+border-top-right:2px solid #6C757E;
+border-bottom-right:2px solid #6C757E;
+
+}
+
+.conda p, .conda i{
+border-right:2px solid #6C757E;
+}
+.conda .bi {
+font-size:0.9rem;
+width:12%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="pro">
+<img id="warr" style="margin:0px;padding:0px;align-items:center;border-radius:2000px;border:4px ridge black;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
+
+<img style="margin:0px;padding:0px;align-items:center;" src="https://raw.githubusercontent.com/microintel/endgram/main/photo/digdog-red.png" width="40%;">
+
+</div>
+
+<h5> <u>DigDog</u> - The Digital Document Of <span onclick="location.href='https://microintel.github.io/microintel/v1/micropro.html'">Microintel</span>'s Memeber Mr. <span>Vignesh </span> & Family...</h5>
+
+<div class="sda">
+<input id="inn" oninput="srtt(this.value)" placeholder="Search Doc...">
+<i class="bi bi-file-earmark-arrow-down"></i>
+<i onclick="location.href='https://forsomething2410.github.io/kanakkuvallakkuda/finpulse.html'" class="bi bi-house-door"></i>
+
+</div>
+<br>
+
+<details>
+    <summary>MinuScule</summary>
+     <details>
+        <summary> Aadhar</summary>
+           <details>
+             <summary> Aadhar Number </summary>
+             <div class="conda">
+               <input type="text" placeholder="Pass"><p>U2FsdGVkX18tJ2zzVBBdEXcm+8dd1sIwPJtKoBqS+gc=</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+               </div>
+           </details>
+           
+           <details>
+           <summary> Aadhar Name </summary>
+           <div class="conda">
+           <input type="text" placeholder="Pass"><p>U2FsdGVkX1+fCHDAMrpTTPQuHmSBzsvJKErK+jZQNUs=</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+           </div>
+           </details>
+           
+           <details>
+           <summary> Aadhar DOB </summary>
+           <div class="conda">
+           <input type="text" placeholder="Pass"><p>U2FsdGVkX19rUfgv9wW8tbmt9c49QkIzKUgCaVhGfa4=</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+           </div>
+           </details>
+           
+           <details>
+           <summary> Aadhar Linked Mob Num </summary>
+           <div class="conda">
+           <input type="text" placeholder="Pass"><p>U2FsdGVkX1+OJVn13rqFN0kKl4Lr4tqIj1VjqZcwzog=</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+           </div>
+           </details>
+     </details>
+    
+    <details>
+      <summary> Ration Card</summary>
+        <details>
+           <summary> Ration Card Number </summary>
+              <div class="conda">
+              <input type="number" placeholder="Pass"><p>P9fi|•√πrr %$]Tww0%$ywuR÷6Nm</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+              </div>
+        </details>
+        
+        <details>
+          <summary> Ration Card Memebers </summary>
+            <div class="conda">
+            <input type="number" placeholder="Pass"><p>P9fi|•√πrr %$]Tww0%$ywuR÷6Nm</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+            </div>
+        </details>
+    </details>
+    
+    <details>
+        <summary> Caste Certificate </summary>
+        <details>
+          <summary> Caste Certificate Number </summary>
+          <div class="conda">
+          <input type="number" placeholder="Pass"><p>P9fi|•√πrr %$]Tww0%$ywuR÷6Nm</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+          </div>
+          <details>
+            <summary> Caste Open & expiry Date</summary>
+            <div class="conda">
+            <input type="number" placeholder="Pass"><p>P9fi|•√πrr %$]Tww0%$ywuR÷6Nm</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+            </div>
+          </details>
+        </details>
+        <details>
+        <summary> Caste Name & User Name </summary>
+        <div class="conda">
+        <input type="number" placeholder="Pass"><p>P9fi|•√πrr %$]Tww0%$ywuR÷6Nm</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+        </div>
+        </details>
+        <details>
+          <summary>  Caste Income </summary>
+          <div class="conda">
+          <input type="number" placeholder="Pass"><p>P9fi|•√πrr %$]Tww0%$ywuR÷6Nm</p><i class="bi bi-check2" onclick="dver(this)"></i><i onclick="wtclip(this)" class="bi bi-copy"></i>
+          </div>
+        </details>
+    
+    </details>
+
+
+
+</details>
+
+
+<div class="gallery">
+  <div class="gallery__strip__wrapper">
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_Aadhar.png"/></div>
+        <div class="photo__name"> Aadhar</div>
+      </div>
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_RationCard.jpg"/></div>
+        <div class="photo__name"> RationCard </div>
+      </div>
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_PanCard.png"/></div>
+        <div class="photo__name">PanCard</div>
+      </div>
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_SslcMC.jpg"/></div>
+        <div class="photo__name"> SSLC MC</div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_CasteC.jpg"/></div>
+      <div class="photo__name"> Caste C</div>
+      </div>
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_IncomC.jpeg"/></div>
+      <div class="photo__name"> Income C</div>
+      </div>
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_VoteC.png"/></div>
+      <div class="photo__name"> Vote C</div>
+      </div>
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_DiplomaSemMC.png"/></div>
+      <div class="photo__name"> Diplima Sem MC</div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_DiplomaC.jpg"/></div>
+      <div class="photo__name"> Diploma C</div>
+      </div>
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_DiplomaProvC.jpg"/></div>
+      <div class="photo__name"> Diploma Provisional C</div>
+      </div>
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_UkgData.png"/></div>
+      <div class="photo__name">Ukg</div>
+      </div>
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_KEA.jpeg"/></div>
+      <div class="photo__name"> KEA </div>
+      </div>
+      
+      
+    
+ 
+
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_BankPassBook.jpg"/></div>
+        <div class="photo__name"> PassBook</div>
+      </div>
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_LandRecord.jpeg"/></div>
+        <div class="photo__name"> land & Home Records</div>
+      </div>
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_Bills.jpg"/></div>
+        <div class="photo__name"> Bills & Recepits</div>
+      </div>
+      <div class="photo">
+        <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_MedicalReport.png"/></div>
+        <div class="photo__name"> Medical Reports </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_BloodGroupC.jpeg"/></div>
+      <div class="photo__name"> Blood Group C </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_VehicleData.jpg"/></div>
+      <div class="photo__name"> Vehicle </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_BirthC.png"/></div>
+      <div class="photo__name"> Birth C </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/DeathC.png"/></div>
+      <div class="photo__name"> Death C </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_TC.jpeg"/></div>
+      <div class="photo__name"> TC </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_PrathibaKaranji.jpeg"/></div>
+      <div class="photo__name"> Prathiba Karanji</div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_LensKartData.jpeg"/></div>
+      <div class="photo__name"> LensKart Data </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_Results.png"/></div>
+      <div class="photo__name"> Results </div>
+      </div>
+      
+      <div class="photo">
+      <div class="photo__image"><img src="https://forsomething2410.github.io/kanakkuvallakkuda/digdog/P_ScholarshipData.jpeg"/></div>
+      <div class="photo__name"> Scolarship Data </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript">
+
+function dver(x){
+
+let ddata= x.parentElement.children[1].innerHTML;
+let dpas = x.parentElement.children[0].value;
+ddata.toString();
+dpas.toString();
+
+const d = CryptoJS.AES.decrypt(ddata,dpas);
+
+
+x.parentElement.children[1].innerHTML=d.toString(CryptoJS.enc.Utf8);;
+
+}
+
+
+function srtt(v) {
+    let pn = document.getElementsByClassName("photo__name");
+
+    for (let x = 0; x < pn.length; x++) {
+        let sm1 = pn[x].innerHTML.toLowerCase();
+        let sm2 = v.toLowerCase();
+        
+        if (!sm1.includes(sm2)) {
+            pn[x].parentElement.style.display = "none";
+        } else {
+            pn[x].parentElement.style.display = "block";
+        }
+    }
+}
+
+
+async function chdp(){
+
+let fdp= await fetch("https://api.github.com/repos/forsomething2410/kanakkuvallakkuda/contents/digdog/dpimage");
+
+let con= await fdp.json();
+
+let ran= Math.floor(Math.random()* parseInt(con.length));
+document.getElementById("warr").src=con[ran]["download_url"];
+
+setTimeout(chdp,4000);
+}
+
+chdp();
+
+
+
+function wtclip(d){
+
+let xd = d.parentElement.children[1].innerHTML;
+
+navigator.clipboard.writeText(xd).then(() => {
+  d.className="bi bi-check2-all";
+  d.style.color="#26abff";
+});
+}
+
+</script>
+
+
+
+
+</body>
+</html>
