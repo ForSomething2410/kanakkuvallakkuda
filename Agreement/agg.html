@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stock Management Agreement</title>
+  <title>Stock Agreement</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@
     height: 2px !important;
     background-color: black !important;
     }
-    }
+    } 
     .container {
       max-width: 900px;
       margin: 10px auto;
@@ -104,91 +104,33 @@
 <body>
   
   
-  <div class="container">
-    <div class="header">
-      <img src="https://www.suzlon.com/images/suzlon-logo.png" alt="Company Logo">
-      <h1>Stock Management Agreement</h1>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjPlIh0WiSn6BQcSt-NK0VHoF8wdJIIdNo5-xyxMwVmKwedTbaNfRuOi8i&s=10" alt="Broker Logo">
-    </div>
-  
-    <hr>
-   
-    <p><strong>Agreement Start Date:</strong> November 23, 2024</p>
-    <p><strong>Agreement End Date:</strong> November 23, 2034</p>
-    <p>This agreement is entered into between <strong> Vignesh D </strong> ("Investor") and <strong> Pranav P</strong> ("Manager"), regarding the management of <strong> Suzlon </strong> stocks for a duration of 5 years.</p>
+  <div id="con" class="container">
     
-    <hr>
-    
-    <h3>Company Details</h3>
-    <p><strong>Company Name:</strong> Suzlon Energy Ltd.</p>
-    <p><strong>Address:</strong> Maker Chambers IV, 222 Nariman Point, Mumbai</p>
-    <p><strong>Industry:</strong> renewable energy solutions provider</p>
-    
-    <hr>
-
-    <h3>Stock Details</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Stock Type</th>
-          <th>Number of Shares</th>
-          <th>Purchase Price</th>
-          <th>Total Value</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Equity Shares</td>
-          <td>1,000</td>
-          <td>₹2,500</td>
-          <td>₹25,00,000</td>
-        </tr>
-      </tbody>
-    </table>
-
-<hr>
-
-<h3>Terms and Conditions</h3>
-    <ul>
-      <li>The Maneger will manage the specified stocks for a term of 10 years.</li>
-      <li>The investor retains ownership of the stocks.</li>
-      <li>Any sale or purchase must be approved by the investor in writing.</li>
-      <li>The broker shall provide quarterly reports on stock performance.</li>
-    </ul>
-
-<hr>
-    <h3> Asset Manager Details</h3>
-    <p><strong> Name :</strong> PRANAV P </p>
-    <p><strong> Aadhar Number :  </strong>   </p>
-    <p><strong> Pan Number :</strong> EBXPP2808H </p>
-    <p><strong> DAN / BO ID : </strong> 1203320215453161  </p>
-    <p><strong> DP ID : </strong>  12033202 </p>
-    <p><strong> DP NAME :  </strong> ANGEL ONE LIMITED   </p>
-    <p><strong> Depository :  </strong>  CDSL </p>
-    <p><strong> AngelOne Client Id :  </strong>  P54004027 </p>
-    <p><strong> Address  :</strong> DESIGOWDANAPURA VILLAGE, KALPURA POST CHAMARAJANAGARA TALUK, HARAVE CHAMRAJANAGAR, KARNATAKA CHAMRAJANAGAR KARNATAKA 571128 </p>
-    <p><strong> Phone Number : </strong> 6361381156  </p>
-    <p><strong> Gmail ID : </strong>  PRANAV735308@GMAIL.COM </p>
-    <p><strong> Fathar Name : </strong> PRABHUSWAMY  </p>
-    <p><strong> Bank </strong> IPPB , IPOS0000001, 022810101240  </p>
-
-<hr>
-
-    <h3>Signatures</h3>
-    <div class="signature-section">
-      <div class="signature">
-        <p>Investor Vignesh Signature</p>
-        <img src="investorSIGN.png" alt="Investor Signature">
-      </div>
-      <div class="signature">
-        <p> Manager Pranav Signature</p>
-        <img src="managerSIGN.png" alt="Broker Signature">
-      </div>
-    </div>
-
-    <footer>
-      <p>Generated on November 23, 2024. This document is legally binding under applicable laws.</p>
-    </footer>
   </div>
+  
+  
+  <script type="text/javascript">
+  
+ // let ppda=`U2FsdGVkX18+vsuure6q5g5K0UaYP/Mvp8VYRLDqXdDLlBZVC9KVAcs2+WbA3ix8BbI+xT6ob1k5W0kqz/pjTzO1RPEEOBa6z91A5eU2r2DMXhczgIdTtCPtdNm3ePG8IWye0FUmXZsZ0g91X5Ywm+6mmOwKypThEHDKxrG+gAU+ihQYtGh9ZDFDa0o/2gZ2XfJHebVhoMeo8X/b/kQ9zwm5G/dG2j1aWl1v/919nAVsmjlF0d4qLD1nzbpnilT/n1xdWsJmPa30ZyEFFqAtttB4u3cG4RwLd/TKdtXLjqSGqn/RFzCD6pQCnKZxt5hKO4aHmvARiAWcnd++iHUXtHn1n8jtziB0EdTI4Q3odYzdWJ4U3hc/UT0/n+9NIBmF70MjhbVSjoR81gP3knm3AiLylto4lNQFUiBrFRa1PCWy3vaJWt/xXLgnTvsT1ZnFcOv9zJUIAVIDarr3wnrPjESdFlXQN7/1jWM0XexklONpvO2FjSLN6Z7H8YNj52XaYbiae1ZDy1PNgnzUuXv3jyfUzCCqY6LYkvUavYM3ZZ/6FIN126JQwOqFLisJ3bk/dvWyKEFVjzLnRqNV38IrIVdQRonXb93UfvqrseBibfRCvAj7mpaUB7WXZwzBiFl84EPHtc4XlOhPHL5/FABpbt6WuWdpP7y21Y1vY4tNFNKRt8pN7W1D+N9VgHDNwgckXVUigZxdJIY0QsG3yQPRXBCq7lDYxjN/N5VwLd50ouqrKgNi9e5tznWVF88YzX7jomt/n6cCphHB8MAR6woW3j+w9aDPHszP2N4TCL1CtM1JmcbaP7rt2ZoFj5Eeqv/0564pRYs4yn3/Pnnmwaa2i+F5pFdbJ08DsYYdfyirsPNMsCu3/exHQ9t9dDESsDObAdFkgKvbrEsAC3WDOPw20wqUtIO5uYQpnM49UKvfDcMsofG/mg+Rnx1jDYSFhgxREl5h+S2UarbG+aNy/piDLVlOYwEAA/4lp683AknE8K+/ISmJ9oYLkikj9IMUJuTG49SD+vzxxos2kKQjXot5+BbPfLBnkCuoOeZN9F/vv6FcojFJaRfbnXZ3oZaNm8YvMNY3hN6uuSPs98+xaGw65TH3qXNxImoszzUmtTu1fcUlUwGO2rdw1kgY6DcWEu5lEjun6EM0X7tG3ghCaY+LB+loPw1mPiFoKK4Bk9LouD++wT8cY5D56zyPTFJEnFfGNYS7q+X5cJFGkDVWII5VzzFGGtbrwtYRJ+BgimMTS91HXWTD/Qm4gp9TFlVkkMPIdgp3sJMLhtlRBKnCtVxOVgIeqf6TqI6Ij38lsj7D9OFIzG4qCXB2sL0UU9MknMcadnTK7SW4lh+iIpGvkthDwHjlBCz9YahLa58WNL0EqAh+SJaxU0FwHDOazdQ+jF0sxdSGV3t4KLtfp+nULzq9j4V7WPFcqCfKXK37ksNDuT8+uTNqqaF+YSYVSRoAxTERlYE149+0tyoUTwxdi54UeyYmGkJ3GJcV+BqH71o7lyDnV7wepwxYk02LF6FBA7cmm3XDq8Flxh753F8u7HFDe57mMQ+Z7XP9wth4vdXhp3tOVMt4prIofa8xSLzOgacZxEw0CNrNa4bFowgBf9iE8GjrD4t/Axbstadyhipzsb5Xn0PZGAqXbn8EJ01vB9ePWZqG5JegBPEq57FjyJwAK6XSipHnlWJXqMGheSIWL4jm6n3WF+SzTdN/LhRlnTFBD9tRFGZYXn6UJRtSZbjAUPG8O9g5RFhOwAIDUHzE60JV2Z1/atcFTd0x8hguuwvWC2N69r8E1CzDctVFP8NoJ//j/p+x/3skKXiAr9BYLfveRS6cj5csAIjEA4sWsAGPrVQd4DHuJt8ZZqyjE6agU3gdaZb8F1jYPmQ0t+t+2Okkfa8w56j+/NQK896CXG1x9fqcM76i/YRCWdQkkv38tQZb53QcPBmuUPwIRt2n+nCnbgWzW4Jh6GfaRf80OZl5YRDy3LdefEg6o3PRBEx3NlwYrPpuHU+GP7PHcHEqUxkc+aU5xYk+HBWd+3bpf6uSP5XrbW80vrhzGX1Xf9uf1+HkhRzKSBdDUB1ZAdCpy4FhGIfPY66+bwysC78VpgqsJZ7/rO9myx6I9faacWXVXIL2wkEIMSruNSj24r9+47GPB+fLwUZmpCB30b+nRmHR9CcG55L9cSCwylVjuwsIcr50tIaizeZdLJW6br2ZVwbFlMHRRqP909gqUF4uiGUagNget55c3F+nNOX7ctzQr62RSNjs/lUf/GW3HplVXcDmHtqi74uCWhNUHvmERZemkuKjEy8aOs/9rCed+Gg5NoeMFi2rsonU3IdIA7ug0zKltUFC5I3/+HYv8OMc4wOCkTS/+o/gt6RNkNkQtS3ny0GFcGqgIYhqgLO28BJDlRaBXsKOijVI+4rhtxL1ftxRhpFEUM9CJrwxDrCwdDdj4ZxYp1eMw+NZ/oSroakAuT9fY/Hkn/oN79yt4D3jgY2EgtXJWBnwiDeqiiERg+8jesuV6FL5kg4XUFZ20riM6HOTNY04Mcku0eVs+Bs9ipkeHRZdgHEJLJhViv8x/APxO7OHyjMzRrKap1k18Xk5/x3+Tie+wGRi5Idgh77/WGmxEo2euo5qUkY3fGQtb9mJ+PJGZToUZ2l68VHnPfRsEGPJx4iJeOx9884KFvcwVxNc4Yxle7/c5ujtR0z2zl6gpxvDurAgabXFBLZDXMVdLUsA3zr4QFWCEodeQRldF8wmqZH2IbqW0xHaoS2WEjNuLo94j3WaK4h184fCaq9Er6muZr7ibW+TMKwMMtsLLngM4w2hE+BIEpnVlovmpPrnmXTJy5h1B3zXAV0Mgfbo69RJ+k9rVsln0SC2a+pH8v17XuNd/6Gokbt5vUvjQ5Sbrz5szaAXbyNowwLm6XbhllQo2PX1M+txojXIA3rm+EIJ4glXQtMdw9Yoed7a82acN2OGno6tF3GdFeXHCSC/wMzcyEzr29MS/XUwku1nkIUhASdsiTmkMHw3zYymo988SwU1jzJ+sAuOtrZn1p5qndUOC6SZWgXVZg5WZ8oaC704NvvDeDfThkkVRjE5Oo85hZ2WrgTNFUcU8WjWOzmtETIYXB83rd8XOJMkeN+Y1CJsFNM7N3L6g/s28FiMrtsmIQzUaz0BHU+zkKKUlt8ZFUDoDLFVis3QgWBogW6Nf+HpbPQ1JtpPH8J1XEQIspZvCQiARbGvCtSIXERVq8WVirdJTal6bnYaI6EqWwe0n/YFaa6vMyiRB3qjir6CHFKwtFlGH4Pf+MWs/RxIsPp/vIadWdeKwGZ2+plXU0WDuerefmWkJmrBNMA9G+G7CoXCIhMoRvnyF8+G3uO2AUoOiW6JS20y73HKvYVR5zkvQSu0ubRnUzMLhe/de/Be93zkALjHhGV3dyTea9cn+wsed/UU2IcWco/g0B6qXk2v4V5z9Pvwy6evk9wlMYYG9MpyVHDFr0K0Bxy4PN9IabNWXLs3I2mMX0LpJmcCG4RYc/uxX2m0G2UBpDwUXutclH4kEQU7wiFSOBiIshKjHwjjfB/EoLnjI93kVp5x0L4RVa3+qn7Gn+SFYH3xdwQpxMLME2y/kqukPuOKOJdBDfBfbaAobRubDYzO9k7pjh0qTw6CnDsWvjg3z+eDOmpSBnBZ6y/8k560I8LcSJWAau5CrjsAFiVcXrGISHydjTQsS3V2oVJemITcLIIZ7lAQpdPNgFKBVXie8ZsFRtxJ0sITHHI8TI6lzg/T1S9BcRPRDq9ltxTfoOQmJP0YuYHZqE7BCqFiIINpPXCku3OEn43RO/oDifrS/f8T3QgPWA93+90QmXOKcGx/xfpQIgj+yNFkdNggBuvdRo8Qxf2oHbzYUSLJpgZ0jnanjYhpT5lSgsKub3EPs2WlwlWEVLZ7tWVXwyrYIKY0drIBRlP5oJUrBV58Xi/vcZ1DntZfDdw2QaHQOOTdRMeueByrzzgNlaZEyVL+GsGc7jtRq9/tzZIoUN27VwRRbnff+VWQj9GPZQxa8ZYlv8GCqXbMsVJsO+hp11p4nIcdRYG1TgFQfN6vip02m++tHzVQNoMW7No4Q2pkRbnOfwjYDaWQnS8Hc1tJwVUsB623Uzyxlw9zR4RFbWOpyEwltx2B9roxYzGuKF4B7h+ot+nUCtcUtk9MKLv61bCdkNYfl53U7C8x+Oikbv4H2cZLQhvijAwn+a3gqKFsAna5fSAv+yhrHFhyvrauEhnMEMVUgCZ0UHzjQWHZLPoeFbS7xew0Ays+HOOOVadpFV/ivDYlPEyhP2uNG5OBjN4weWGoCu0Rt5GpHFiMeuJZ8EckgJB/W1N+oo3Mk/y6BxujYkyPXU3+BBPX8lP5D2/+dPJeFf7zPoqE9No5YhD9jq3TyGn/iDYdyt71l1CYqhqNyxUrYYIhHPajq1lK6w==`;
+  
+  
+  
+  function xx() {
+  let ddd=`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`;
+  
+  let de = CryptoJS.AES.decrypt(ddd,prompt("Enter Stock Agrement Password : ")).toString(CryptoJS.enc.Utf8);
+  
+  //alert(de);
+  
+  
+  document.getElementById("con").innerHTML=de;
+  
+  window.print();
+  }
+  
+  setTimeout(xx, 2000);
+  
+  
+  </script>
 </body>
 </html>
