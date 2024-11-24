@@ -33,7 +33,7 @@ let ccatFood=[0,0,0,0,0,0,0];
 }
 
 
-setTimeout(summ,2000);
+setTimeout(summ,5000);
 
 
 
