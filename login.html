@@ -7,6 +7,10 @@
 </head>
 <body>
 
+<div id="venom_loEn">
+<img src="finpulseIntroC.gif" id="venom_loadEN">
+</div>
+
 <div class="con" onclick="onclick">
   <div class="center">
     <h2>FinPulse Login</h2>
@@ -18,7 +22,9 @@
 </div>
 
 <script type="text/javascript">
-
+setTimeout(()=>{
+document.getElementById("venom_loEn").style.display="none";
+},7000);
 
 function s() {
 let date = new Date();
