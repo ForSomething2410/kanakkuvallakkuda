@@ -59,9 +59,9 @@ let fdx= await fx.text();
 let fdxp= await fxp.text();
 
 setTimeout(()=>{
-let fdeeX1=  CryptoJS.AES.decrypt(fd,fddpwd).toString(CryptoJS.enc.Utf8);
-let fdeeX2= CryptoJS.AES.decrypt(fdx,fddpwd).toString(CryptoJS.enc.Utf8);
-let fdeeX3=  CryptoJS.AES.decrypt(fdxp,fddpwd).toString(CryptoJS.enc.Utf8);
+let fdeeX1=  CryptoJS.AES.decrypt(fd,userName).toString(CryptoJS.enc.Utf8);
+let fdeeX2= CryptoJS.AES.decrypt(fdx,userName).toString(CryptoJS.enc.Utf8);
+let fdeeX3=  CryptoJS.AES.decrypt(fdxp,userName).toString(CryptoJS.enc.Utf8);
 document.getElementById("ppr").innerHTML+=fdeeX1;
 document.getElementById("ppr").innerHTML+=fdeeX2;
 document.getElementById("ppr").innerHTML+=fdeeX3;
