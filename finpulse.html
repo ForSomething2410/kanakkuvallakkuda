@@ -43,7 +43,7 @@ let eUser = getCoo('user');
 if (eUser) {
     userName = eUser;
 } else {
-    userName = prompt("Enter your name:");
+    userName = prompt("Enter FinPulse Data Password :");
     setCoo('user', userName, 7);
 }
 
@@ -383,7 +383,8 @@ getDataa();
        <span style="border:none;font-size:1.2rem;" onclick="location.href='percentage.html'" class="bi bi-percent"></span>
        
        <span style="border:none;font-size:1.2rem;" onclick="location.href='dod/#animals'" class="fa-solid fa-heart-pulse"></span>
-        <span style="border:none;font-size:1.2rem;" onclick="location.href='digdog/'" class="fas fa-dog"></span>
+        <span style="border:none;font-size:1rem;" onclick="location.href='digdog/'" class="fas fa-dog"></span>
+        <span style="border:none;font-size:1.1rem;" onclick="document.cookie = 'user'+ '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=' + window.location.pathname;location.reload();" class="bi bi-trash"></span>
         
         
         
