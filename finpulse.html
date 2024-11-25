@@ -21,13 +21,13 @@
 
 let userName;
 
-function setCookie(name, value, days) {
+function setCoo(name, value, days) {
     let date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
     document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=" + window.location.pathname;
 }
 
-function getCookie(name) {
+function getCoo(name) {
     let cookies = decodeURIComponent(document.cookie).split(';');
     name = name + "=";
     for (let cookie of cookies) {
@@ -39,12 +39,12 @@ function getCookie(name) {
     return "";
 }
 
-let existingUser = getCookie('user');
-if (existingUser) {
-    userName = existingUser;
+let eUser = getCoo('user');
+if (eUser) {
+    userName = eUser;
 } else {
     userName = prompt("Enter your name:");
-    setCookie('user', userName, 7);
+    setCoo('user', userName, 7);
 }
 
 console.log(userName);
