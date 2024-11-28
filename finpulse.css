@@ -488,7 +488,14 @@
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:space-around;
+        align-items:center;
         gap:10px;
+        }
+        .alver details summary::marker{
+        color:red;
+        }
+        .alver details[open] summary::marker{
+        color:lightgreen;
         }
         
         .getCS{
@@ -497,7 +504,7 @@
         margin:0px;
         padding:0px;
         display:flex;
-        width:40%;
+        width:60%;
         justify-content:space-between;
         align-items:center;
         }
