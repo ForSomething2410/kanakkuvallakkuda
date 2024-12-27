@@ -646,6 +646,40 @@
         width:35%;
         }
         
+        .daSort{
+        display:none;
+        grid-template-columns:auto auto;
+        width:97%;
+        margin:5px;
+        color:var(--b);
+        background-color:var(--w);
+        border-right:1px solid var(--tbor);
+        
+        border-left:3px solid var(--bor);
+        
+        border-top:1px solid var(--tbor);
+        
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        border-bottom:1px solid var(--bor);
+        border-bottom:1px solid var(--tbor);
+        
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+        
+        }
+        .daSort div{
+        padding:3px;
+        width:90%;
+        text-align:left;
+        border-bottom:1px solid var(--bor);
+        }
+        .daSor1{
+        color:#e5e5e5;
+        }
+        
+        
+        
         
         
         

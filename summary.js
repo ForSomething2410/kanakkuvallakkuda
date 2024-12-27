@@ -216,3 +216,41 @@ x.forEach((t)=>{ffysS+=parseInt(t);});
 return ffysS;
 }
 
+
+
+
+let daCatSor= [document.getElementsByClassName("food"),
+                       document.getElementsByClassName("travel"),
+                       document.getElementsByClassName("edu"),
+                       document.getElementsByClassName("vehi"),
+                       document.getElementsByClassName("pho"),
+                       document.getElementsByClassName("hos"),
+                       document.getElementsByClassName("movie"),
+                       document.getElementsByClassName("oth"),
+                       document.getElementsByClassName("tata"),
+                       document.getElementsByClassName("dad"),
+                       document.getElementsByClassName("viji"),
+                       document.getElementsByClassName("fam")
+                       ];
+        //             food=0,travel=1,edu=2,vehi=3,pho=4,hos=5,movie=6,oth=7,tata=8,dad=9,viji=10,fam=11
+            
+        function nknCh(){
+        document.getElementById("daSortId").style.display="grid";
+        for(let mi=0; mi< daCatSor.length;mi++){
+        
+        let miin= "daSor"+mi;
+        let docEl=document.getElementById(miin);
+        let tot=0;
+        Array.from(daCatSor[mi]).forEach((mx)=>{
+        if(mx.parentNode.parentNode.style.display!=='none'){
+        tot+= parseInt(mx.children[0].innerHTML);
+        }
+        });
+        docEl.innerHTML=tot;
+        tot=0;
+        
+        
+        }
+        
+        }
+        
