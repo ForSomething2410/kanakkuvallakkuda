@@ -1,12 +1,11 @@
 let every=document.getElementById("texta");
 
-
-
-
-document.querySelector("#exex").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
-document.querySelector("#allin").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
-document.querySelector("#exp").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
-document.querySelector("#bal").addEventListener("click",(e)=>{every.value += "+"+e.target.innerHTML;alve();});
+["exex", "allin", "exp","bal","daSor0","daSor1","daSor2","daSor3","daSor4","daSor5","daSor6","daSor7","daSor8","daSor9","daSor10","daSor11"].forEach(id => {
+document.querySelector(`#${id}`).addEventListener("click", (e) => {
+every.value += e.target.innerHTML;
+alve();
+          });
+          });
 document.querySelector(".bi-plus").addEventListener("click",(e)=>{every.value += "+"});
 document.querySelector(".bi-dash").addEventListener("click",(e)=>{every.value += "-"});
 document.querySelector(".bi-arrow-counterclockwise").addEventListener("click",(e)=>{every.value =""});

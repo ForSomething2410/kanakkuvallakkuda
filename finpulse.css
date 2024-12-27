@@ -651,6 +651,7 @@
         grid-template-columns:auto auto;
         width:97%;
         margin:5px;
+        margin-top:20px;
         color:var(--b);
         background-color:var(--w);
         border-right:1px solid var(--tbor);
@@ -674,8 +675,17 @@
         text-align:left;
         border-bottom:1px solid var(--bor);
         }
+        .daSort div:hover{
+        
+        background-color:purple;
+        }
         .daSor1{
         color:#e5e5e5;
+        display:flex;
+        justify-content:space-between;
+        }
+        input[type="checkbox"]{
+        accent-color:red;
         }
         
         

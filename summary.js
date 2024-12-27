@@ -236,6 +236,7 @@ let daCatSor= [document.getElementsByClassName("food"),
             
         function nknCh(){
         document.getElementById("daSortId").style.display="grid";
+       
         for(let mi=0; mi< daCatSor.length;mi++){
         
         let miin= "daSor"+mi;
@@ -246,11 +247,46 @@ let daCatSor= [document.getElementsByClassName("food"),
         tot+= parseInt(mx.children[0].innerHTML);
         }
         });
+      
         docEl.innerHTML=tot;
+        
         tot=0;
         
         
         }
         
+        
+        }
+        
+        
+        function daSot(nkn,chk){
+        
+        if(nkn.checked){
+        
+        Array.from(daCatSor[parseInt(chk)]).forEach((mdx)=>{
+        
+        mdx.style.display="";
+        
+        });
+        
+        }
+        else{
+        Array.from(daCatSor[parseInt(chk)]).forEach((mdx)=>{
+        
+        mdx.style.display="none";
+        
+        });
+        }
+        
+        let steTranS=0;
+        document.querySelectorAll('.daSor0, .daSor1, .daSor2, .daSor3, .daSor4, .daSor5, .daSor6, .daSor7, .daSor8, .daSor9, .daSor10, .daSor11').forEach((cvb)=>{
+        steTranS+= parseInt(cvb.children[0].innerHTML);
+        });
+        
+        }
+        
+        
+        function daSotAll(xm){
+        xm.checked ? document.querySelectorAll('.trans').forEach(exz=> exz.style.display= "") : document.querySelectorAll('.trans').forEach(exz=> exz.style.display= "none");
         }
         
