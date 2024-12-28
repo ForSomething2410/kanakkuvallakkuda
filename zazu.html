@@ -206,15 +206,16 @@ justify-content:center;
 
 <script type="text/javascript">
 
+
 async function shareD(n,d){
 
-let xxx="";
+let xxx=[n];
 
 let xx= document.getElementsByClassName(d);
 Array.from(xx).forEach((x,y)=>{
 Array.from(x.children).forEach((t)=>{
 
-xxx+=t.innerHTML+"\n";
+xxx.push(t.innerHTML);
 
 
 });
@@ -227,12 +228,12 @@ let fet= await fetch(imgU);
 let blo= await fet.blob();
 
 let xxc= new File([blo],"image.jpg",{type:blo.type});
-
-
+let ccx=encodeURIComponent(JSON.stringify(xxx));
+let jso= `https://forsomething2410.github.io/kanakkuvallakkuda/dis?data=${ccx}`;
 navigator.share({
 title:"hsjjs",
 text:"hiii",
-url:n+"\n"+xxx,
+url:jso,
 files:[xxc]
 });
 
