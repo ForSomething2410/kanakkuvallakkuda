@@ -1,0 +1,246 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+background-color:black;
+width:97%;
+
+color:white;
+}
+.gpar{
+width:100%;
+display:flex;
+height:100%;
+flex-wrap:wrap;
+justify-content:space-between;
+gap:10px;
+flex-grow:2;
+}
+
+
+
+.pare{
+background-color:transparent;
+width:75%;
+
+display:grid;
+grid-template-columns:1fr;
+grid-gap:40px;
+}
+
+.par2{
+width:20%;
+background-color:black;
+margin:0px;
+color:white;
+
+}
+.par2 div{
+position:sticky;
+width:100%;
+height:85vh;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+top:10%;
+color:red;
+z-index:10;
+}
+.child{
+background-color:#AD343E;
+width:100%;
+height:300px;
+display:flex;
+flex-direction:column;
+
+
+overflow:auto;
+padding:15px 5px;
+border:2px solid #848484;
+border-radius:7px;
+color:white;
+border-radius: 10px;
+
+
+}
+
+.child > img{
+border-radius:7px;
+width:100%;
+height:70%;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3),  0 1px 3px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15),0 0 40px rgba(255, 255, 255, 0.1);
+
+
+}
+.zazuData{
+width:100%;
+padding:5px;
+text-align:center;
+}
+.chhed{
+font-size:1.2rem;
+padding:5px;
+}
+
+a{
+color:white;
+text-decoration:none;
+font-size:1.2rem;
+}
+
+.himg{
+width:40%;
+}
+.zh{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:8px;
+margin:3px;
+background-color:black;
+border-bottom:1.5px solid white;
+
+}
+i{
+color:white;
+font-size:1.5rem;
+}
+
+.chhh{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+.chhh i{
+font-size:1.2rem;
+
+}
+.zaData{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<div class="zh">
+<i class="fa-solid fa-user"></i>
+<img class="himg" src="/storage/emulated/0/Pictures/GridArt/IMG_20241228_070447.png">
+<i class="fas fa-sign-out"></i>
+</div>
+
+
+<br>
+
+<div class="gpar">
+<div class="pare">
+   <div class="child" id="A"> 
+      <div class="chhh"> 
+          <font class="chhed"> Aadhar Card</font> 
+          <i class="fa-regular fa-floppy-disk"></i> 
+          <i onclick="shareD('Aadhar Card','AadharData')" class="fa-regular fa-share-from-square"></i> 
+       </div>
+       <img src="https://picsum.photos/200/300?random=1">
+       <div class="zaData AadharData"> 
+          <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+          <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+          <font class="zazuData" onclick="zazuWTC(this)"> 6666 </font> 
+       </div> 
+      
+       </div>
+       
+   
+   
+   </div>
+
+<div class="par2">
+<div>
+   <a href="#A">A</a>  
+   <a href="#">B</a>  
+   <a href="#">C</a>  
+   <a href="#">D</a>  
+   <a href="#">E</a>  
+   <a href="#">F</a>  
+   <a href="#">G</a>  
+   <a href="#">H</a>  
+   <a href="#">I</a>  
+   <a href="#">J</a>  
+   <a href="#">K</a>  
+   <a href="#">L</a>  
+   <a href="#">M</a>  
+   <a href="#">N</a>  
+   <a href="#">O</a>  
+   <a href="#">P</a>  
+   <a href="#">Q</a>  
+   <a href="#">R</a>  
+   <a href="#">S</a>  
+   <a href="#">T</a>  
+   <a href="#">U</a>  
+   <a href="#">V</a>  
+   <a href="#">W</a>  
+   <a href="#">X</a>  
+   <a href="#">Y</a>  
+   <a href="#Z">Z</a>
+   </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+async function shareD(n,d){
+
+let xxx="";
+
+let xx= document.getElementsByClassName(d);
+Array.from(xx).forEach((x,y)=>{
+Array.from(x.children).forEach((t)=>{
+
+xxx+=t.innerHTML+"\n";
+
+
+});
+});
+
+let imgU=xx[0].parentNode.children[1].src;
+
+let fet= await fetch(imgU);
+
+let blo= await fet.blob();
+
+let xxc= new File([blo],"image.jpg",{type:blo.type});
+
+
+navigator.share({
+title:"hsjjs",
+text:"hiii",
+url:n+"\n"+xxx,
+files:[xxc]
+});
+
+}
+
+
+
+</script>
+</body>
+
+</html>
