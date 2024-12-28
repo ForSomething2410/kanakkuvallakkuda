@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Array Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f9f9f9;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Data from URL</h1>
+    <ul id="data-list"></ul>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const dataParam = urlParams.get("data");
+        const dataArray = JSON.parse(decodeURIComponent(dataParam));
+        const dataList = document.getElementById('data-list');
+        dataArray.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = `Index ${index}: Value ${item}`;
+            dataList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
