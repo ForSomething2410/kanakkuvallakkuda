@@ -1,7 +1,7 @@
 {
-  "name": "FinPulse",
-  "short_name": "FinPulse",
-  "description": "Finpulse.",
+  "name": "BlackRoad",
+  "short_name": "BlackRoad",
+  "description": "BlackRoad.",
   "start_url": "https://forsomething2410.github.io/kanakkuvallakkuda/finpulse.html",
   "scope": "https://forsomething2410.github.io/kanakkuvallakkuda/",
   "display": "standalone",
